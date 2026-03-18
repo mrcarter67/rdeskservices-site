@@ -17,7 +17,7 @@ const init = ({ transporter }) => {
     router.post('/', requestLimiter, async (req, res) => {
         const { name, email, subject, service, compliance, it_service, message } = req.body;
 
-        const dest_emails = [process.env.DEST_EMAIL, process.env.DEST_EMAIL_2];
+        const dest_emails = [process.env.DEST_EMAIL || 'michael.rabot@rdesk.us', process.env.DEST_EMAIL_2].filter(Boolean);
         const email_subject = `RDesk Inquiry from ${name} - ${subject}`
         const email_body =  `
           New RDesk Inquiry

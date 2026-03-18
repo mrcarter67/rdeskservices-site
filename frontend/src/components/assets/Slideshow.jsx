@@ -7,9 +7,11 @@ import '../../css/bootstrap.min.css'
  * 
  * @param {Object} props - The properties object.
  * @param {Object} props.images - List of image relative address that will be included in slideshow.
+ * @param {string} [props.containerClass] - Optional CSS class for the container div.
+ * @param {Object} [props.containerStyle] - Optional inline style for the container div.
  * @return {JSX.Element} - The Slideshow component.
  */
-const Slideshow = ({ images }) => {
+const Slideshow = ({ images, containerClass, containerStyle }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
   
     useEffect(() => {
@@ -20,7 +22,7 @@ const Slideshow = ({ images }) => {
     }, [images.length]);
   
     return (
-      <div className="slideshow-container col-md-6 center">
+      <div className={containerClass || "slideshow-container col-md-6 center"} style={containerStyle}>
         {images.map((src, index) => (
           <img key={index} src={src} alt={`Slide ${index}`} 
                className={`slide ${currentIndex === index ? "active" : ""}`} />

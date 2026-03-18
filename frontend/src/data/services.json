@@ -701,7 +701,7 @@
             "id": "junk-removal",
             "page-link": "/junk-ewaste/junk-removal",
             "icon": "faTruck",
-            "images": ["junk-removal.jpg"],
+            "images": ["junk-removal-1.jpg", "junk-removal-2.jpg", "junk-removal-3.jpg", "junk-removal-4.jpg"],
             "headers": ["Office & Commercial Cleanouts", "Residential & Property Cleanouts", "Ongoing Pickup Plans", "What We Haul Away", "Why Choose RDESK Junk Removal?"],
             "content": [
                 ["Office Furniture Removal: Desks, chairs, cubicles, shelving, and filing cabinets hauled away quickly.", "Complete Office Cleanouts: Full-service cleanouts for offices, suites, and commercial spaces.", "Warehouse Cleanups: Clear out overstock, old equipment, pallets, and industrial debris.", "Retail Cleanouts: Specialized removal of fixtures, equipment, and build-out materials."],

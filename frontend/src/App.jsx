@@ -7,6 +7,7 @@ import Contact from './components/contact/Contact';
 import ITPage from './components/ITServices/ITPage';
 import EdSolutions from './components/EducationServices/EdSolutionsPage';
 import JunkEWasteLanding from './components/JunkEWaste/JunkEWasteLanding';
+import JunkEWasteServicePage from './components/JunkEWaste/JunkEWasteServicePage';
 import servicesData from './data/services.json';
 import AdminLogin from './components/AdminLogin';
 import AdminPage from './components/AdminPage';
@@ -55,7 +56,7 @@ const App = () => {
             <Route
               key={service.name}
               path={service["page-link"]}
-              element={<ITPage service={service} />}
+              element={<JunkEWasteServicePage service={service} />}
             />
           ))}
 

@@ -73,7 +73,17 @@ const JunkEWasteLanding = () => {
                         </p>
                     </div>
                     <div style={{ marginTop: '2em' }}>
-                        <Slideshow images={['./images/junk-1.jpg', './images/ewaste-1.jpg', './images/office-1.jpg', './images/junk-2.jpg', './images/ewaste-2.jpg', './images/office-2.jpg']} />
+                        <Slideshow
+                            images={[
+                                './images/junk-1.jpg', './images/junk-2.jpg', './images/junk-3.jpg',
+                                './images/ewaste-1.jpg', './images/ewaste-2.jpg', './images/ewaste-3.jpg',
+                                './images/junk-4.jpg', './images/junk-5.jpg', './images/junk-6.jpg',
+                                './images/ewaste-4.jpg', './images/office-1.jpg', './images/office-2.jpg',
+                                './images/rack-1.jpg', './images/rack-2.jpg'
+                            ]}
+                            containerClass="slideshow-container-lg"
+                            containerStyle={{ width: '80%', maxWidth: '900px', height: '403px' }}
+                        />
                     </div>
                 </div>
             </section>

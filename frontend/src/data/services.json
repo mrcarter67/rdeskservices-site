@@ -701,7 +701,7 @@
             "id": "junk-removal",
             "page-link": "/junk-ewaste/junk-removal",
             "icon": "faTruck",
-            "images": ["installation.jpg"],
+            "images": ["junk-removal.jpg"],
             "headers": ["Office & Commercial Cleanouts", "Residential & Property Cleanouts", "Ongoing Pickup Plans", "What We Haul Away", "Why Choose RDESK Junk Removal?"],
             "content": [
                 ["Office Furniture Removal: Desks, chairs, cubicles, shelving, and filing cabinets hauled away quickly.", "Complete Office Cleanouts: Full-service cleanouts for offices, suites, and commercial spaces.", "Warehouse Cleanups: Clear out overstock, old equipment, pallets, and industrial debris.", "Retail Cleanouts: Specialized removal of fixtures, equipment, and build-out materials."],
@@ -718,7 +718,7 @@
             "id": "ewaste-disposal",
             "page-link": "/junk-ewaste/ewaste-disposal",
             "icon": "faRecycle",
-            "images": ["cloud_solutions.jpg"],
+            "images": ["ewaste-disposal.jpg"],
             "headers": ["Safe Electronics Disposal", "Secure Data Wiping & Destruction", "Certified Data Destruction Certificates", "Electronics We Accept", "Compliance & Environmental Standards"],
             "content": [
                 ["Computer & Laptop Disposal: Safe, certified recycling of desktops, laptops, and all-in-ones.", "Server & Networking Equipment: Proper disposal of servers, switches, routers, and rack equipment.", "Monitor & Display Disposal: CRT and flat-screen monitors processed in compliance with environmental regulations.", "Printer & Copier Removal: Full removal and disposal of office printers, copiers, and fax machines.", "Mobile Device Disposal: Secure handling of smartphones, tablets, and portable devices."],
@@ -735,7 +735,7 @@
             "id": "office-moves",
             "page-link": "/junk-ewaste/office-moves",
             "icon": "faBuilding",
-            "images": ["wiring.avif"],
+            "images": ["office-moves.jpg"],
             "headers": ["Commercial & Residential Office Moves", "IT Server & Rack Installation", "Asset Tagging & Inventory Management", "Pre-Move Planning & Coordination", "Post-Move IT Support"],
             "content": [
                 ["Commercial Office Relocations: Full-service moving for offices, suites, and corporate campuses.", "Residential Moves: Professional moving services for home offices and residential properties.", "Furniture Disassembly & Reassembly: Safe disassembly and professional reinstallation of all office furniture.", "Equipment Transport: Careful handling and transport of sensitive IT equipment.", "Packing & Unpacking Services: Complete packing services with protective materials for fragile items."],

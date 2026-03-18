@@ -735,7 +735,7 @@
             "id": "office-moves",
             "page-link": "/junk-ewaste/office-moves",
             "icon": "faBuilding",
-            "images": ["office-1.jpg", "office-2.jpg", "office-3.jpg", "office-4.jpg", "rack-1.jpg", "rack-2.jpg", "rack-3.jpg", "rack-4.jpg", "rack-5.jpg", "rack-6.jpg"],
+            "images": ["office-1.jpg", "office-2.jpg", "office-3.jpg", "office-4.jpg", "rack-1.jpg", "rack-2.jpg", "rack-4.jpg", "rack-5.jpg", "rack-6.jpg"],
             "headers": ["Commercial & Residential Office Moves", "IT Server & Rack Installation", "Asset Tagging & Inventory Management", "Pre-Move Planning & Coordination", "Post-Move IT Support"],
             "content": [
                 ["Commercial Office Relocations: Full-service moving for offices, suites, corporate campuses, and multi-floor environments of any size.", "Residential Moves: Professional moving services for home offices, residential properties, and personal relocations.", "Furniture Disassembly & Reassembly: Expert disassembly and reinstallation of modular workstations, cubicles, standing desks, and conference tables.", "Equipment Transport: White-glove handling and secure transport of monitors, servers, printers, and sensitive IT equipment.", "Packing & Unpacking Services: Full packing services using industry-grade materials to protect fragile, high-value, and oversized items.", "After-Hours & Weekend Moves: Available for evenings and weekends to minimize disruption to your business operations during normal hours."],

@@ -71,7 +71,7 @@ const JunkEWasteServicePage = ({ service }) => {
                             {hasMultipleImages ? (
                                 <div style={{
                                     display: 'grid',
-                                    gridTemplateColumns: '1fr 1fr',
+                                    gridTemplateColumns: '1fr 1fr 1fr',
                                     gap: '8px'
                                 }}>
                                     {service.images.map((img, i) => (
@@ -81,7 +81,7 @@ const JunkEWasteServicePage = ({ service }) => {
                                             alt={`${service.name} ${i + 1}`}
                                             style={{
                                                 width: '100%',
-                                                height: '180px',
+                                                height: '140px',
                                                 objectFit: 'cover',
                                                 borderRadius: '6px'
                                             }}

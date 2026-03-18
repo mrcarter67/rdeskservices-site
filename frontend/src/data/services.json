@@ -692,4 +692,58 @@
             "frontend/public/images/edtechsolutions1.png"
         ]
     }
+,
+    "Junk & E-Waste Services": [
+        {
+            "name": "Junk Removal",
+            "title-long": "General Junk Removal Services",
+            "description": "RDESK provides fast, professional junk removal services for homes, offices, and commercial properties. Whether you need a full office cleanout, furniture disposal, warehouse cleanup, or an ongoing pickup plan, our licensed and insured team handles it all — leaving your space clean and clutter-free.",
+            "id": "junk-removal",
+            "page-link": "/junk-ewaste/junk-removal",
+            "icon": "faTruck",
+            "images": ["installation.jpg"],
+            "headers": ["Office & Commercial Cleanouts", "Residential & Property Cleanouts", "Ongoing Pickup Plans", "What We Haul Away", "Why Choose RDESK Junk Removal?"],
+            "content": [
+                ["Office Furniture Removal: Desks, chairs, cubicles, shelving, and filing cabinets hauled away quickly.", "Complete Office Cleanouts: Full-service cleanouts for offices, suites, and commercial spaces.", "Warehouse Cleanups: Clear out overstock, old equipment, pallets, and industrial debris.", "Retail Cleanouts: Specialized removal of fixtures, equipment, and build-out materials."],
+                ["Home Cleanouts: Clear basements, garages, attics, and storage areas of unwanted items.", "Estate Cleanouts: Compassionate and efficient removal of household items during estate settlements.", "Property Cleanups: Post-construction debris, landscaping waste, and general property clearing.", "Move-Out Cleanouts: Fast turnaround to get properties rent-ready or sale-ready."],
+                ["Monthly Pickup Plans: Scheduled monthly pickups to keep your space consistently clear.", "Quarterly Pickup Plans: Seasonal cleanups on a quarterly basis.", "Custom Schedules: Flexible pickup plans tailored to your business needs.", "Priority Scheduling: Fast-track options for urgent removal needs."],
+                ["Furniture: Sofas, tables, chairs, mattresses, office furniture, and fixtures.", "Appliances: Refrigerators, washers, dryers, ovens, and small appliances.", "General Debris: Construction debris, yard waste, boxes, and miscellaneous junk.", "Electronics: Computers, TVs, and office equipment handled through our secure E-Waste process."],
+                ["Licensed & Insured: Fully licensed and insured for your complete peace of mind.", "Free Estimates: Upfront, no-obligation estimates.", "Same-Day Service: Fast response times for urgent removal needs.", "Eco-Responsible Disposal: We prioritize recycling and donation over landfill whenever possible."]
+            ]
+        },
+        {
+            "name": "E-Waste Disposal",
+            "title-long": "Secure E-Waste Disposal & Certified Data Destruction",
+            "description": "RDESK provides certified, secure e-waste disposal services for businesses and individuals. Old computers, servers, monitors, printers, and other electronics contain sensitive data and toxic materials that must be handled responsibly. We offer safe disposal with certified data wiping, physical destruction, and official Certificates of Data Destruction.",
+            "id": "ewaste-disposal",
+            "page-link": "/junk-ewaste/ewaste-disposal",
+            "icon": "faRecycle",
+            "images": ["cloud_solutions.jpg"],
+            "headers": ["Safe Electronics Disposal", "Secure Data Wiping & Destruction", "Certified Data Destruction Certificates", "Electronics We Accept", "Compliance & Environmental Standards"],
+            "content": [
+                ["Computer & Laptop Disposal: Safe, certified recycling of desktops, laptops, and all-in-ones.", "Server & Networking Equipment: Proper disposal of servers, switches, routers, and rack equipment.", "Monitor & Display Disposal: CRT and flat-screen monitors processed in compliance with environmental regulations.", "Printer & Copier Removal: Full removal and disposal of office printers, copiers, and fax machines.", "Mobile Device Disposal: Secure handling of smartphones, tablets, and portable devices."],
+                ["Certified Data Wiping: DoD-standard multi-pass data wiping for all storage media.", "Physical Destruction: Hard drive shredding and physical destruction for media requiring total elimination.", "SSD Disposal: Specialized destruction methods for solid-state and flash-based storage.", "RAID Wiping: Complete data destruction for complex multi-drive storage configurations.", "Chain of Custody: Full tracking and documentation from pickup through final destruction."],
+                ["Certificate of Data Destruction: Official certificates issued for every device processed.", "Audit-Ready Documentation: Detailed reports suitable for regulatory audits and compliance reviews.", "Serial Number Tracking: Every device tracked by serial number ensuring complete accountability.", "HIPAA & GLBA Support: Documentation supporting compliance with healthcare and financial data regulations."],
+                ["Computers, laptops, tablets, and smartphones.", "Servers, storage arrays, and networking equipment.", "Monitors, TVs, and display devices of all types.", "Printers, scanners, copiers, and fax machines.", "Batteries, cables, chargers, and peripheral devices."],
+                ["R2 Standard Alignment: Processes aligned with Responsible Recycling best practices for e-waste.", "EPA Compliance: Disposal methods that meet EPA guidelines for handling electronic waste.", "Zero Landfill Policy: Electronics are recycled, refurbished, or properly processed.", "Licensed & Insured: Fully licensed operation with liability coverage and professional accountability."]
+            ]
+        },
+        {
+            "name": "Office Moves & IT Rack Stack",
+            "title-long": "Office Moves & IT Rack and Stack Services",
+            "description": "RDESK specializes in full-service commercial and residential office moves combined with expert IT rack and stack services. We handle the physical relocation of your office furniture and equipment while our certified technicians install, cable, and test your IT infrastructure at the new location.",
+            "id": "office-moves",
+            "page-link": "/junk-ewaste/office-moves",
+            "icon": "faBuilding",
+            "images": ["wiring.avif"],
+            "headers": ["Commercial & Residential Office Moves", "IT Server & Rack Installation", "Asset Tagging & Inventory Management", "Pre-Move Planning & Coordination", "Post-Move IT Support"],
+            "content": [
+                ["Commercial Office Relocations: Full-service moving for offices, suites, and corporate campuses.", "Residential Moves: Professional moving services for home offices and residential properties.", "Furniture Disassembly & Reassembly: Safe disassembly and professional reinstallation of all office furniture.", "Equipment Transport: Careful handling and transport of sensitive IT equipment.", "Packing & Unpacking Services: Complete packing services with protective materials for fragile items."],
+                ["Server Rack Installation: Professional rack mounting and structured cabling of servers, switches, and network equipment.", "Cable Management: Organized, labeled cabling for a clean, maintainable infrastructure.", "Network Equipment Setup: Installation and configuration of routers, switches, firewalls, and wireless access points.", "Power & UPS Configuration: Proper PDU and UPS setup for all critical equipment.", "Post-Installation Testing: Full verification and testing of all equipment and network connectivity."],
+                ["Asset Tagging: Physical tagging of all IT assets with scannable barcodes or RFID labels.", "Inventory Reports: Comprehensive documentation of all equipment makes, models, and serial numbers.", "Asset Database Management: Digital records maintained and delivered in your preferred format.", "Equipment Audit: Pre-move audit to fully catalog all existing assets before relocation.", "Disposal Planning: Identification of obsolete equipment for responsible disposal during the move."],
+                ["Site Assessment: Evaluation of both current and new locations to plan the optimal move strategy.", "Floor Plan Layout: Coordination with your team on furniture and equipment placement at the new site.", "IT Infrastructure Review: Assessment of network and power infrastructure at the destination.", "Timeline Coordination: Detailed scheduling to minimize disruption to your business operations.", "Vendor Coordination: Liaison with ISPs, phone carriers, and other vendors for a seamless cutover."],
+                ["Network Validation: Verify all network connections and systems are fully operational after the move.", "User Workstation Setup: Set up and test all employee workstations at the new location.", "On-Site Troubleshooting: Immediate support to resolve any issues that arise post-move.", "Documentation Handoff: Deliver updated network diagrams, asset inventories, and configuration records.", "Follow-Up Support: Scheduled follow-up to address any outstanding concerns after the transition."]
+            ]
+        }
+    ]
 }

@@ -75,6 +75,9 @@ const Header = () => {
       case 'other':
         navigate('/other_services');
         break;
+      case 'junk-ewaste':
+        navigate('/junk-ewaste');
+        break;
       case 'contact':
         navigate('/contact');
         break;
@@ -113,6 +116,9 @@ const Header = () => {
                   <Dropdown name="ISO/Compliance" data={services['Compliance Services']} onClick={() => menuClick('compliance')} />
                 </li>
                 <li className={activeMenu === 'other' ? 'active' : ''}> <a onClick={() => menuClick('other')}>Other Services</a> </li>
+                <li className={activeMenu === 'junk-ewaste' ? 'dropdown active' : 'dropdown'}>
+                  <Dropdown name="Junk &amp; E-Waste" data={services['Junk & E-Waste Services']} onClick={() => menuClick('junk-ewaste')} />
+                </li>
                 <li className={activeMenu === 'contact' ? 'active' : ''}>
                   <Dropdown name="Contact Us" data={data.contact_purpose} scrollToSection={scrollToSection} onClick={() => menuClick('contact')} />
                 </li>

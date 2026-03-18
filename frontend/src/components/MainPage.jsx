@@ -6,6 +6,7 @@ import EdSolutions from './EducationServices/EdSolutions'
 import ITServices from './ITServices/ITServices'
 import Footer from './assets/Footer'
 import OtherServices from './other-services/OtherServices'
+import JunkEWasteSection from './JunkEWaste/JunkEWasteSection'
 import Divider from './assets/Divider'
 import AnnouncementBanner from './assets/AnnouncementBanner'
 
@@ -22,15 +23,17 @@ const MainPage = () => {
         <Home />
         <About />
         <AnnouncementBanner
-          message="We now do Ipad and Tablet Repairs ... Learn more!"
-          link='solutions/tablet-repairs'
-          versionKey="rdesk-pro-2025-07"
+          message="NEW: Junk Removal, E-Waste Disposal &amp; Office Moves — Call 831-529-4490 for a FREE estimate!"
+          link='junk-ewaste'
+          versionKey="rdesk-junk-ewaste-2025-03"
         />
         <Divider />
         <EdSolutions />
         <ITServices />
         <CompliancyInfo />
         <OtherServices />
+        <Divider />
+        <JunkEWasteSection />
         <Footer />
       </div>
   )

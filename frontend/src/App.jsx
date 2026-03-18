@@ -6,7 +6,8 @@ import OtherLanding from './components/other-services/OtherLanding';
 import Contact from './components/contact/Contact';
 import ITPage from './components/ITServices/ITPage';
 import EdSolutions from './components/EducationServices/EdSolutionsPage';
-import servicesData from './data/services.json';  
+import JunkEWasteLanding from './components/JunkEWaste/JunkEWasteLanding';
+import servicesData from './data/services.json';
 import AdminLogin from './components/AdminLogin';
 import AdminPage from './components/AdminPage';
 
@@ -41,10 +42,20 @@ const App = () => {
 
           {/* IT Services routes */}
           {servicesData["IT Solutions"].map(service => (
-            <Route 
-              key={service.name} 
-              path={service["page-link"]} 
-              element={<ITPage service={service} />} 
+            <Route
+              key={service.name}
+              path={service["page-link"]}
+              element={<ITPage service={service} />}
+            />
+          ))}
+
+          {/* Junk & E-Waste routes */}
+          <Route path='/junk-ewaste' element={<JunkEWasteLanding />} />
+          {servicesData["Junk & E-Waste Services"].map(service => (
+            <Route
+              key={service.name}
+              path={service["page-link"]}
+              element={<ITPage service={service} />}
             />
           ))}
 

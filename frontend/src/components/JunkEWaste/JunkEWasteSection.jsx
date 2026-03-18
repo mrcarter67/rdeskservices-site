@@ -53,7 +53,7 @@ const JunkEWasteSection = () => {
                     </div>
                     <div className="col-md-6">
                         <div className="devices-image">
-                            <img src="images/junk-removal.jpg" alt="Junk and E-Waste Removal Services" />
+                            <img src="images/junk-1.jpg" alt="Junk and E-Waste Removal Services" />
                         </div>
                     </div>
                 </div>

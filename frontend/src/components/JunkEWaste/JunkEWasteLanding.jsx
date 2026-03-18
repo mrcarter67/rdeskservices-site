@@ -73,7 +73,7 @@ const JunkEWasteLanding = () => {
                         </p>
                     </div>
                     <div style={{ marginTop: '2em' }}>
-                        <Slideshow images={['./images/junk-removal.jpg', './images/ewaste-disposal.jpg', './images/office-moves.jpg']} />
+                        <Slideshow images={['./images/junk-1.jpg', './images/ewaste-1.jpg', './images/office-1.jpg', './images/junk-2.jpg', './images/ewaste-2.jpg', './images/office-2.jpg']} />
                     </div>
                 </div>
             </section>

@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: rdeskservices
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install && npm run build:ui
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production

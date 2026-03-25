@@ -2,6 +2,10 @@ import MainPage from './components/MainPage';
 import CompliancePage from './components/compliance/Compliance-Page';
 import ComplianceLanding from './components/compliance/ComplianceLanding';
 import ITLanding from './components/ITServices/ITLanding';
+import FullStackDevelopmentLanding from './components/FullStackDevelopment/FullStackDevelopmentLanding';
+import FullStackDevelopmentPage from './components/FullStackDevelopment/FullStackDevelopmentPage';
+import WebsiteDevelopmentSetup from './components/FullStackDevelopment/WebsiteDevelopmentSetup';
+import BusinessSolutions from './components/FullStackDevelopment/BusinessSolutions';
 import OtherLanding from './components/other-services/OtherLanding';
 import Contact from './components/contact/Contact';
 import ITPage from './components/ITServices/ITPage';
@@ -27,6 +31,9 @@ const App = () => {
         <Routes>
           <Route path='/' element={<MainPage />} />
           <Route path='/solutions' element={<ITLanding />} />
+          <Route path='/full-stack-development' element={<FullStackDevelopmentLanding />} />
+          <Route path='/full-stack-development/website-setup' element={<WebsiteDevelopmentSetup />} />
+          <Route path='/full-stack-development/business-solutions' element={<BusinessSolutions />} />
           <Route path='/education-technology-solutions' element={<EdSolutions edsolutions={servicesData["Education Technology Solutions"]}/>} />
           <Route path='/compliance' element={<ComplianceLanding />} />
           <Route path='/other_services' element={<OtherLanding otherServices={servicesData['Office / Other Services']}/>} />
@@ -46,7 +53,7 @@ const App = () => {
             <Route
               key={service.name}
               path={service["page-link"]}
-              element={<ITPage service={service} />}
+              element={service.id === 'full-stack-development' ? <FullStackDevelopmentPage service={service} /> : <ITPage service={service} />}
             />
           ))}
 

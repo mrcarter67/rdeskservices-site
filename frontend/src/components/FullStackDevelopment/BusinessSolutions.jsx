@@ -239,7 +239,7 @@ const BusinessSolutions = () => {
         {/* Slideshow */}
         <div className="row" style={{ marginBottom: '2em' }}>
           <div className="col-md-12">
-            <Slideshow images={['./images/development.jpg', './images/api-development.jpg', './images/web-development.jpg', './images/software-development.jpg']} />
+            <Slideshow images={['/images/development.jpg', '/images/api-development.jpg', '/images/web-development.jpg', '/images/software-development.jpg']} />
           </div>
         </div>
 

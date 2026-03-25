@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../assets/Footer';
+import Slideshow from '../assets/Slideshow';
 import '../../css/style.css';
 import '../../css/bootstrap.min.css';
 
@@ -129,6 +130,13 @@ const WebsiteDevelopmentSetup = () => {
             <p style={{ textAlign: 'center', marginBottom: '3em', fontSize: '1.1em' }}>
               From concept to deployment, we manage every phase of your website development with expertise and precision.
             </p>
+          </div>
+        </div>
+
+        {/* Slideshow */}
+        <div className="row" style={{ marginBottom: '2em' }}>
+          <div className="col-md-12">
+            <Slideshow images={['./images/development.jpg', './images/api-development.jpg', './images/web-development.jpg', './images/software-development.jpg']} />
           </div>
         </div>
 

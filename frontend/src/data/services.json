@@ -425,7 +425,10 @@
             "page-link": "/solutions/full-stack-development",
             "icon": "faCode",
             "images": [
-                "development.jpg"
+                "development.jpg",
+                "api-development.jpg",
+                "web-development.jpg",
+                "software-development.jpg"
             ]
         }
     ],

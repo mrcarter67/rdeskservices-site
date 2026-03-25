@@ -40,7 +40,7 @@ const FullStackDevelopmentLanding = () => {
       <section className="section container">
         <div className="row">
           <div style={{ marginTop: "2em"}}>
-            <Slideshow images={['./images/development.jpg', './images/cloud_solutions.jpg', './images/it-solutions.jpg']} />
+            <Slideshow images={['./images/development.jpg', './images/api-development.jpg', './images/web-development.jpg', './images/software-development.jpg']} />
             <div className="col-md-6">
               <h2>Our Full Stack Development Services Include:</h2>
               <div className="scrollable-accordion fixed-height">

@@ -33,6 +33,11 @@
         {
             "name": "IT Strategy and Consulting",
             "description": "We work as your trusted partner to align IT strategies with your business goals. Our expertise ensures you make informed decisions that drive growth and innovation."
+        },
+        {
+            "name": "Full Stack Development",
+            "description": "End-to-end Full Stack Development services include automation, API and integration, CRM/ERP implementation, and scalable enterprise software for manufacturing and financial systems.",
+            "page-link": "/solutions/full-stack-development"
         }
     ]
 }

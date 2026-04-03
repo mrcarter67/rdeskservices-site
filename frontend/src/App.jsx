@@ -15,6 +15,7 @@ import JunkEWasteServicePage from './components/JunkEWaste/JunkEWasteServicePage
 import servicesData from './data/services.json';
 import AdminLogin from './components/AdminLogin';
 import AdminPage from './components/AdminPage';
+import GovernmentLanding from './components/government/GovernmentLanding';
 
 import {
   BrowserRouter as Router,
@@ -38,6 +39,7 @@ const App = () => {
           <Route path='/compliance' element={<ComplianceLanding />} />
           <Route path='/other_services' element={<OtherLanding otherServices={servicesData['Office / Other Services']}/>} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/government' element={<GovernmentLanding />} />
 
           {/* Compliance routes */}
           {servicesData["Compliance Services"].map(iso => (

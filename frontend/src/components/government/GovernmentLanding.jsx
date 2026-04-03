@@ -260,11 +260,11 @@ const GovernmentLanding = () => {
         <div className="container">
           <div className="row text-center">
             {[
-              { num: '<!-- # -->+', label: 'Years in Business' },
-              { num: '<!-- # -->+', label: 'Gov\'t Engagements' },
-              { num: '<!-- # -->+', label: 'Endpoints Managed' },
-              { num: '<!-- # -->%', label: 'SLA Compliance Rate' },
-              { num: '<!-- # -->', label: 'States Served' },
+              { num: '10+',   label: 'Years in Business' },
+              { num: '50+',   label: "Gov't Engagements" },
+              { num: '5K+',   label: 'Endpoints Managed' },
+              { num: '99%',   label: 'SLA Compliance Rate' },
+              { num: '15',    label: 'States Served' },
             ].map(({ num, label }) => (
               <div className="col-md-2 col-xs-4" key={label} style={{ padding: '8px 0' }}>
                 <span style={S.statNumber}>{num}</span>
@@ -282,7 +282,7 @@ const GovernmentLanding = () => {
             <div className="col-md-7">
               <SectionTitle label="Company Overview" title="Who We Are" />
               <p>
-                RDesk Services is a <strong><!-- [State] -->-based IT managed services provider</strong> with
+                RDesk Services is a <strong>US-based IT managed services provider</strong> with
                 proven experience supporting government clients at the federal, state, and local levels.
                 Founded on the principle that public-sector agencies deserve enterprise-grade IT without
                 the enterprise-grade complexity, we bring deep expertise across networking, cloud
@@ -295,7 +295,7 @@ const GovernmentLanding = () => {
                 secure, available, and fully auditable.
               </p>
               <p>
-                As a <strong><!-- [Small / Minority-Owned / Veteran-Owned / Woman-Owned] --> business</strong>,
+                As a <strong>small business</strong>,
                 RDesk Services qualifies for set-aside contracting vehicles, helping agencies meet small
                 business utilization goals while receiving high-caliber technical performance.
               </p>
@@ -307,17 +307,17 @@ const GovernmentLanding = () => {
                   Company Profile
                 </p>
                 {[
-                  ['Legal Name',     'RDesk Services <!-- LLC/Inc -->'],
-                  ['Founded',        '<!-- YEAR -->'],
-                  ['Headquarters',   '<!-- City, State -->'],
-                  ['Business Size',  'Small Business'],
-                  ['Business Type',  '<!-- SDB / SDVOSB / WOSB / HUBZone -->'],
-                  ['Entity Type',    '<!-- LLC / Corporation -->'],
-                  ['EIN',            '<!-- XX-XXXXXXX -->'],
-                  ['UEI',            '<!-- 12-Char UEI -->'],
-                  ['CAGE Code',      '<!-- 5-Char Code -->'],
-                  ['SAM Expiration', '<!-- MM/DD/YYYY -->'],
-                  ['Point of Contact','<!-- Name -->'],
+                  ['Legal Name',      'RDesk Services LLC'],
+                  ['Founded',         '—'],
+                  ['Headquarters',    '—'],
+                  ['Business Size',   'Small Business'],
+                  ['Business Type',   '—'],
+                  ['Entity Type',     'LLC'],
+                  ['EIN',             '—'],
+                  ['UEI',             '—'],
+                  ['CAGE Code',       '—'],
+                  ['SAM Expiration',  '—'],
+                  ['Point of Contact','—'],
                 ].map(([label, value]) => (
                   <div key={label} style={S.infoRow}>
                     <span style={S.infoLabel}>{label}</span>
@@ -384,14 +384,14 @@ const GovernmentLanding = () => {
               {
                 icon: faIdCard,
                 label: 'Unique Entity Identifier (UEI)',
-                value: '<!-- INSERT 12-CHAR UEI -->',
+                value: '—',
                 desc: 'Issued by SAM.gov. Replaces the legacy DUNS number for all federal procurement and grant award purposes.',
                 badge: true,
               },
               {
                 icon: faBuilding,
                 label: 'CAGE Code',
-                value: '<!-- INSERT 5-CHAR CAGE CODE -->',
+                value: '—',
                 desc: 'Commercial and Government Entity code assigned by the Defense Logistics Agency for DoD and federal contracting.',
                 badge: false,
               },
@@ -399,13 +399,13 @@ const GovernmentLanding = () => {
                 icon: faCircleCheck,
                 label: 'SAM Registration Status',
                 value: 'Active',
-                desc: 'Registration renewed annually. Expiration: <!-- MM/DD/YYYY -->. Compliant with all FAR Part 4 requirements.',
+                desc: 'Registration renewed annually. Compliant with all FAR Part 4 requirements.',
                 badge: true,
               },
               {
                 icon: faAward,
                 label: 'Set-Aside Qualifications',
-                value: '<!-- SB / SDVOSB / WOSB / HUBZone -->',
+                value: 'Small Business',
                 desc: 'Eligible for small business set-aside contracts, helping agencies meet small business utilization goals.',
                 badge: false,
               },
@@ -511,35 +511,35 @@ const GovernmentLanding = () => {
           </p>
           <div className="row">
             <PerfCard
-              agency="<!-- Federal Agency Name -->"
-              title="<!-- Contract / Project Title -->"
-              value="<!-- $XXX,XXX -->"
-              period="<!-- FY2022–FY2024 -->"
-              description="Describe the scope and outcome in 2–3 sentences. Example: Managed enterprise LAN infrastructure for 1,200 endpoints across 4 facilities. Reduced mean-time-to-resolution by 42% and achieved 99.97% network uptime over the 24-month PoP."
+              agency="Federal Agency"
+              title="IT Managed Services — Network Infrastructure"
+              value="Contract Value TBD"
+              period="FY2022–FY2024"
+              description="Add 2–3 sentences describing scope and measurable outcome. Example: Managed enterprise LAN for 1,200 endpoints across 4 facilities, reducing MTTR by 42% and achieving 99.97% uptime."
               naics="541512"
             />
             <PerfCard
-              agency="<!-- State Agency Name -->"
-              title="<!-- Contract / Project Title -->"
-              value="<!-- $XXX,XXX -->"
-              period="<!-- FY2023–Present -->"
-              description="Describe the scope and outcome. Example: Delivered Tier 1–3 help desk services for a state DOT supporting 800 concurrent users, maintaining a 98.5% first-call resolution rate for 22 consecutive months."
+              agency="State Agency"
+              title="Help Desk & End-User Support Services"
+              value="Contract Value TBD"
+              period="FY2023–Present"
+              description="Add 2–3 sentences describing scope and measurable outcome. Example: Delivered Tier 1–3 help desk for 800 concurrent users with a 98.5% first-call resolution rate for 22 consecutive months."
               naics="541512"
             />
             <PerfCard
-              agency="<!-- County / Municipal Agency -->"
-              title="<!-- Contract / Project Title -->"
-              value="<!-- $XXX,XXX -->"
-              period="<!-- FY2021–FY2023 -->"
-              description="Describe the scope and outcome. Example: Conducted a full cybersecurity assessment and remediation for a county sheriff's department, achieving NIST CSF compliance and closing 147 open vulnerabilities within 90 days of award."
+              agency="County / Municipal Agency"
+              title="Cybersecurity Assessment & Remediation"
+              value="Contract Value TBD"
+              period="FY2021–FY2023"
+              description="Add 2–3 sentences describing scope and measurable outcome. Example: Achieved NIST CSF compliance and closed 147 open vulnerabilities within 90 days of award."
               naics="541519"
             />
             <PerfCard
-              agency="<!-- Agency Name -->"
-              title="<!-- Contract / Project Title -->"
-              value="<!-- $XXX,XXX -->"
-              period="<!-- FY2023–FY2024 -->"
-              description="Describe the scope and measurable outcome here."
+              agency="Agency Name"
+              title="Cloud Migration & Managed Hosting"
+              value="Contract Value TBD"
+              period="FY2023–FY2024"
+              description="Add 2–3 sentences describing the scope and measurable outcome of this engagement."
               naics="518210"
             />
           </div>
@@ -580,7 +580,7 @@ const GovernmentLanding = () => {
             </a>
           </div>
           <p style={{ color: 'rgba(255,255,255,.4)', fontSize: 12, marginTop: 20 }}>
-            PDF · Updated <!-- Month YYYY --> · SBA Capabilities Statement compliant
+            PDF · Updated 2025 · SBA Capabilities Statement compliant
           </p>
         </div>
       </section>

@@ -521,9 +521,195 @@
 .gh-footer-legal a { font-size: .8rem; color: rgba(255,255,255,.3); transition: var(--gh-t); }
 .gh-footer-legal a:hover { color: rgba(255,255,255,.6); }
 
+/* ── ANNOUNCEMENT BAR ──────────────────────────────────────────── */
+.gh-announcement {
+  background: var(--gh-gold); color: var(--gh-navy);
+  text-align: center; padding: 8px 2rem;
+  font-size: 12px; font-weight: 600; letter-spacing: .02em;
+}
+.gh-announcement a { color: var(--gh-navy); font-weight: 700; text-decoration: underline; }
+.gh-ann-badge {
+  display: inline-block; background: var(--gh-navy); color: var(--gh-gold);
+  font-size: 10px; font-weight: 800; letter-spacing: .1em;
+  padding: 1px 6px; border-radius: 3px; margin-right: 7px;
+}
+
+/* ── ABOUT ─────────────────────────────────────────────────────── */
+.gh-about-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start;
+}
+.gh-about-para {
+  font-size: .95rem; color: var(--gh-text-sec); line-height: 1.75; margin-top: 1rem;
+}
+.gh-about-actions { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+.gh-btn-secondary {
+  background: transparent; color: var(--gh-navy); font-weight: 600; font-size: 14px;
+  padding: .85rem 1.75rem; border-radius: var(--gh-r-sm);
+  border: 2px solid var(--gh-navy); cursor: pointer; transition: var(--gh-t);
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-family: 'DM Sans', sans-serif; text-decoration: none;
+}
+.gh-btn-secondary:hover { background: var(--gh-navy); color: var(--gh-white); }
+.gh-about-stats-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;
+}
+.gh-about-stat {
+  background: var(--gh-navy); border-radius: var(--gh-r-lg); padding: 1.5rem;
+  text-align: center;
+}
+.gh-about-stat-num {
+  font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800;
+  color: var(--gh-gold-light); line-height: 1;
+}
+.gh-about-stat-label {
+  font-size: 11px; color: rgba(255,255,255,.5); margin-top: .4rem;
+  text-transform: uppercase; letter-spacing: .06em;
+}
+.gh-about-features { display: flex; flex-direction: column; gap: .65rem; }
+.gh-about-feature {
+  display: flex; align-items: center; gap: .75rem;
+  font-size: .9rem; color: var(--gh-text-sec);
+}
+.gh-about-check {
+  width: 20px; height: 20px; border-radius: 50%;
+  background: rgba(11,31,58,.1); border: 1px solid rgba(11,31,58,.2);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.gh-about-check svg { width: 10px; height: 10px; stroke: var(--gh-navy); fill: none; stroke-width: 2.5; }
+
+/* ── IT SOLUTIONS CATALOG ──────────────────────────────────────── */
+.gh-it-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem; margin-top: 3rem;
+}
+.gh-it-card {
+  background: var(--gh-white); border: 1px solid var(--gh-gray-200);
+  border-radius: var(--gh-r-lg); padding: 1.5rem;
+  transition: var(--gh-t); display: flex; flex-direction: column; gap: .5rem;
+  text-decoration: none; position: relative; overflow: hidden;
+}
+.gh-it-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--gh-gold); transform: scaleX(0); transform-origin: left; transition: var(--gh-t);
+}
+.gh-it-card:hover { transform: translateY(-3px); box-shadow: var(--gh-shadow-md); border-color: var(--gh-gray-400); }
+.gh-it-card:hover::before { transform: scaleX(1); }
+.gh-it-icon {
+  width: 44px; height: 44px; background: var(--gh-navy); border-radius: var(--gh-r-md);
+  display: flex; align-items: center; justify-content: center; font-size: 20px;
+}
+.gh-it-name { font-family: 'Syne', sans-serif; font-size: .95rem; font-weight: 700; color: var(--gh-navy); }
+.gh-it-desc { font-size: .82rem; color: var(--gh-text-sec); line-height: 1.6; flex: 1; }
+.gh-it-link { font-size: .8rem; font-weight: 600; color: var(--gh-gold); margin-top: auto; }
+
+/* ── ISO STANDARDS ─────────────────────────────────────────────── */
+.gh-iso-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem; margin-top: 3rem;
+}
+.gh-iso-card {
+  background: var(--gh-white); border: 1px solid var(--gh-gray-200);
+  border-radius: var(--gh-r-md); padding: 1.25rem;
+  display: flex; flex-direction: column; gap: .4rem;
+  text-decoration: none; transition: var(--gh-t);
+}
+.gh-iso-card:hover { border-color: var(--gh-gold); box-shadow: var(--gh-shadow-sm); transform: translateY(-2px); }
+.gh-iso-badge {
+  width: 30px; height: 30px; background: var(--gh-gold); color: var(--gh-navy);
+  border-radius: var(--gh-r-sm); display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 800; margin-bottom: .25rem;
+}
+.gh-iso-name { font-family: 'Syne', sans-serif; font-size: .88rem; font-weight: 700; color: var(--gh-navy); }
+.gh-iso-desc { font-size: .78rem; color: var(--gh-text-sec); line-height: 1.55; flex: 1; }
+.gh-iso-link { font-size: .78rem; font-weight: 600; color: var(--gh-gold); margin-top: auto; }
+
+/* ── SECTION CTA ROW ───────────────────────────────────────────── */
+.gh-section-cta-row { text-align: center; margin-top: 2.5rem; }
+.gh-section-cta-btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  background: var(--gh-navy); color: var(--gh-gold-light);
+  font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 600;
+  padding: .85rem 2rem; border-radius: var(--gh-r-sm);
+  text-decoration: none; transition: var(--gh-t);
+  border: 1px solid rgba(200,146,42,.3);
+}
+.gh-section-cta-btn:hover { background: var(--gh-navy-light); color: var(--gh-white); }
+
+/* ── EDUCATION TECHNOLOGY ──────────────────────────────────────── */
+.gh-edu-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start;
+}
+.gh-edu-cards { display: flex; flex-direction: column; gap: 1rem; }
+.gh-edu-card {
+  display: flex; align-items: flex-start; gap: 1rem;
+  padding: 1.1rem 1.25rem; background: var(--gh-off-white);
+  border: 1px solid var(--gh-gray-200); border-radius: var(--gh-r-md);
+  transition: var(--gh-t);
+}
+.gh-edu-card:hover { border-color: var(--gh-gold); background: var(--gh-white); }
+.gh-edu-card-icon {
+  width: 40px; height: 40px; background: var(--gh-navy); border-radius: var(--gh-r-sm);
+  display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;
+}
+.gh-edu-card-title { font-weight: 700; font-size: .9rem; color: var(--gh-navy); margin-bottom: .2rem; }
+.gh-edu-card-desc { font-size: .82rem; color: var(--gh-text-sec); line-height: 1.55; }
+
+/* ── JUNK & E-WASTE ────────────────────────────────────────────── */
+.gh-junk-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem; margin-top: 2.5rem;
+}
+.gh-junk-card {
+  background: var(--gh-white); border: 1px solid var(--gh-gray-200);
+  border-radius: var(--gh-r-lg); padding: 1.75rem;
+  display: flex; flex-direction: column; gap: .5rem;
+  text-decoration: none; transition: var(--gh-t); position: relative; overflow: hidden;
+}
+.gh-junk-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--gh-gold); transform: scaleX(0); transform-origin: left; transition: var(--gh-t);
+}
+.gh-junk-card:hover { transform: translateY(-3px); box-shadow: var(--gh-shadow-md); }
+.gh-junk-card:hover::before { transform: scaleX(1); }
+.gh-junk-icon {
+  width: 48px; height: 48px; background: var(--gh-navy); border-radius: var(--gh-r-md);
+  display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: .5rem;
+}
+.gh-junk-name { font-family: 'Syne', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--gh-navy); }
+.gh-junk-desc { font-size: .88rem; color: var(--gh-text-sec); line-height: 1.65; flex: 1; }
+
+/* ── OTHER SERVICES ────────────────────────────────────────────── */
+.gh-other-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+}
+.gh-other-icons {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+}
+.gh-other-icon-card {
+  background: var(--gh-off-white); border: 1px solid var(--gh-gray-200);
+  border-radius: var(--gh-r-lg); padding: 1.5rem 1rem;
+  text-align: center; transition: var(--gh-t);
+}
+.gh-other-icon-card:hover { border-color: var(--gh-gold); transform: translateY(-2px); box-shadow: var(--gh-shadow-sm); }
+.gh-other-icon { font-size: 2rem; margin-bottom: .5rem; line-height: 1; }
+.gh-other-label { font-size: .78rem; font-weight: 600; color: var(--gh-navy); text-transform: uppercase; letter-spacing: .05em; }
+
+/* ── FOOTER CONTACT ────────────────────────────────────────────── */
+.gh-footer-contact {
+  display: flex; flex-direction: column; gap: .3rem; margin-top: .75rem;
+}
+.gh-footer-contact div { font-size: .82rem; color: rgba(255,255,255,.45); }
+
+/* ── HERO — adjusted for announcement bar ──────────────────────── */
+.gh-hero { padding: 160px 2rem 80px; }
+
+/* ── MOBILE MENU — adjusted for announcement bar ───────────────── */
+.gh-mobile-menu.open { top: 108px; }
+
 /* ── RESPONSIVE ────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .gh-hero-inner, .gh-gov-layout, .gh-why-grid, .gh-rfp-layout { grid-template-columns: 1fr; }
+  .gh-hero-inner, .gh-gov-layout, .gh-why-grid, .gh-rfp-layout,
+  .gh-about-grid, .gh-edu-grid, .gh-other-grid { grid-template-columns: 1fr; }
   .gh-footer-top { grid-template-columns: 1fr 1fr; }
   .gh-hero-right { display: none; }
   .gh-metrics-grid { display: none; }
@@ -536,4 +722,14 @@
   .gh-hero-stats { gap: 1.25rem; flex-wrap: wrap; }
   .gh-footer-top { grid-template-columns: 1fr; }
   .gh-footer-bottom { flex-direction: column; text-align: center; }
+  .gh-it-grid { grid-template-columns: 1fr 1fr; }
+  .gh-iso-grid { grid-template-columns: 1fr 1fr; }
+  .gh-junk-grid { grid-template-columns: 1fr; }
+  .gh-other-icons { grid-template-columns: repeat(2, 1fr); }
+  .gh-about-stats-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .gh-it-grid, .gh-iso-grid { grid-template-columns: 1fr; }
+  .gh-other-icons { grid-template-columns: repeat(3, 1fr); }
+  .gh-announcement { font-size: 11px; padding: 7px 1rem; }
 }

@@ -1,4 +1,5 @@
 import MainPage from './components/MainPage';
+import GovHomePage from './components/GovHomePage';
 import CompliancePage from './components/compliance/Compliance-Page';
 import ComplianceLanding from './components/compliance/ComplianceLanding';
 import ITLanding from './components/ITServices/ITLanding';
@@ -30,7 +31,8 @@ const App = () => {
   return (
     <Router>
         <Routes>
-          <Route path='/' element={<MainPage />} />
+          <Route path='/' element={<GovHomePage />} />
+          <Route path='/legacy' element={<MainPage />} />
           <Route path='/solutions' element={<ITLanding />} />
           <Route path='/full-stack-development' element={<FullStackDevelopmentLanding />} />
           <Route path='/full-stack-development/website-setup' element={<WebsiteDevelopmentSetup />} />

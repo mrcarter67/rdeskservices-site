@@ -31,8 +31,7 @@ const App = () => {
   return (
     <Router>
         <Routes>
-          <Route path='/' element={<GovHomePage />} />
-          <Route path='/legacy' element={<MainPage />} />
+          <Route path='/' element={<MainPage />} />
           <Route path='/solutions' element={<ITLanding />} />
           <Route path='/full-stack-development' element={<FullStackDevelopmentLanding />} />
           <Route path='/full-stack-development/website-setup' element={<WebsiteDevelopmentSetup />} />
@@ -41,7 +40,7 @@ const App = () => {
           <Route path='/compliance' element={<ComplianceLanding />} />
           <Route path='/other_services' element={<OtherLanding otherServices={servicesData['Office / Other Services']}/>} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/government' element={<GovernmentLanding />} />
+
 
           {/* Compliance routes */}
           {servicesData["Compliance Services"].map(iso => (

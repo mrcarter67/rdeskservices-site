@@ -122,6 +122,16 @@ const Header = () => {
                 <li className={activeMenu === 'contact' ? 'active' : ''}>
                   <Dropdown name="Contact Us" data={data.contact_purpose} scrollToSection={scrollToSection} onClick={() => menuClick('contact')} />
                 </li>
+                <li>
+                  <a
+                    href="/government"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: '#c8922a', fontWeight: 700, letterSpacing: '.03em' }}
+                  >
+                    Gov Services ★
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

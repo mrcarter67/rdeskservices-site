@@ -70,6 +70,7 @@ const App = () => {
             />
           ))}
 
+          <Route path='/government' element={<GovernmentLanding />}/>
           <Route path='/admin/login' element={<AdminLogin />}/>
           <Route path='/admin/view/requests' element={<AdminPage />}/>
         </Routes>

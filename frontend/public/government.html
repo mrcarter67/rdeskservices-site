@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Government Hub — RDesk Services LLC</title>
+<meta name="description" content="RDesk Services LLC government contracting hub. SAM.gov registered, NAICS codes, capabilities statement, Cal eProcure, county vendor portals, and CMMC readiness."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/png" href="/images/rdesklogo2.webp" sizes="64x64"/>
+<link rel="canonical" href="https://rdeskservices.com/government.html"/>
+<meta name="robots" content="index, follow"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+.cred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.25rem;margin-top:3rem}
+.cred-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:1.75rem;transition:var(--transition);border-left:4px solid var(--gold)}
+.cred-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.cred-card-icon{font-size:2rem;margin-bottom:1rem}
+.cred-card-title{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:.4rem}
+.cred-card-desc{font-size:.875rem;color:var(--text-secondary);line-height:1.65;margin-bottom:.85rem}
+.naics-table{width:100%;border-collapse:collapse;margin-top:2rem}
+.naics-table th{text-align:left;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-light);padding:.75rem 1rem;background:rgba(200,146,42,.08);border-bottom:1px solid rgba(200,146,42,.2)}
+.naics-table td{padding:.85rem 1rem;font-size:.88rem;border-bottom:1px solid rgba(255,255,255,.07);vertical-align:top}
+.naics-table td:first-child{font-family:'DM Mono',monospace;color:var(--gold);font-weight:500;white-space:nowrap}
+.naics-table td:nth-child(2){color:var(--white)}
+.naics-table td:last-child{color:rgba(255,255,255,.5);font-size:.8rem}
+.naics-table tr:last-child td{border-bottom:none}
+.vehicles-grid{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.25rem}
+.vehicle-badge{display:inline-flex;align-items:center;gap:.5rem;font-size:12px;font-weight:600;color:var(--gold-light);background:rgba(200,146,42,.1);border:1px solid rgba(200,146,42,.2);padding:.45rem 1rem;border-radius:100px}
+.caps-download{background:var(--gold);border-radius:var(--radius-lg);padding:2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-top:2rem}
+.caps-download-text h3{font-family:'Syne',sans-serif;font-size:1.15rem;font-weight:800;color:var(--navy);margin-bottom:.25rem}
+.caps-download-text p{font-size:.875rem;color:rgba(11,31,58,.65)}
+.caps-dl-btn{background:var(--navy);color:var(--gold-light);font-size:14px;font-weight:600;padding:.85rem 1.75rem;border-radius:var(--radius-sm);border:none;cursor:pointer;font-family:'DM Sans',sans-serif;display:inline-flex;align-items:center;gap:.5rem;transition:var(--transition)}
+.caps-dl-btn:hover{background:var(--navy-light)}
+.portal-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1.5rem}
+.portal-item{display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-md);transition:var(--transition)}
+.portal-item:hover{background:rgba(255,255,255,.07);border-color:rgba(200,146,42,.25)}
+.portal-icon{font-size:1.35rem;flex-shrink:0}
+.portal-name{font-size:.9rem;font-weight:600;color:var(--white)}
+.portal-sub{font-size:.8rem;color:rgba(255,255,255,.45);margin-top:2px;font-family:'DM Mono',monospace}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-mark">R</div><div class="nav-logo-text">RDesk Services<span>LLC · Managed IT & Cybersecurity</span></div></a>
+    <ul class="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="government.html" class="active">Government</a></li>
+      <li><a href="compliance.html">Compliance</a></li>
+      <li><a href="industries.html">Industries</a></li>
+      <li><a href="contact.html" class="nav-cta">Submit RFP Inquiry ↗</a></li>
+    </ul>
+    <button class="nav-mobile-toggle" onclick="toggleMenu()" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2"><line x1="2" y1="7" x2="20" y2="7"/><line x1="2" y1="11" x2="20" y2="11"/><line x1="2" y1="15" x2="20" y2="15"/></svg></button>
+  </div>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="services.html" onclick="closeMenu()">Services</a><a href="government.html" onclick="closeMenu()">Government</a><a href="compliance.html" onclick="closeMenu()">Compliance</a><a href="industries.html" onclick="closeMenu()">Industries</a><a href="contact.html" onclick="closeMenu()">Submit RFP Inquiry ↗</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-grid"></div><div class="page-hero-glow"></div>
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Government Hub</span></div>
+    <div class="page-hero-tag">Government Hub</div>
+    <h1>Procurement-Ready.<br/><em>Contract-Experienced.</em></h1>
+    <p class="page-hero-desc">All registrations, certifications, NAICS codes, and compliance documentation required for federal, state, and local government contract awards — in one place.</p>
+  </div>
+</section>
+
+<div class="trust-bar"><div class="trust-bar-inner">
+  <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 10"><polyline points="1.5,5.5 4,8 8.5,2"/></svg></div><span class="trust-label">SAM.gov Registered</span></div>
+  <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 10"><polyline points="1.5,5.5 4,8 8.5,2"/></svg></div><span class="trust-label">Small Business Certified</span></div>
+  <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 10"><polyline points="1.5,5.5 4,8 8.5,2"/></svg></div><span class="trust-label">Cal eProcure Registered</span></div>
+  <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 10"><polyline points="1.5,5.5 4,8 8.5,2"/></svg></div><span class="trust-label">CMMC Level 1/2 Ready</span></div>
+  <div class="trust-naics">NAICS 541512 · 541513 · 541519 · 541611</div>
+</div></div>
+
+<!-- CREDENTIALS -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-tag">Registrations & Certifications</div>
+    <h2 class="section-title">Vendor Credentials</h2>
+    <p class="section-desc">RDesk Services LLC maintains active registrations across all major government procurement platforms at the federal, state, and local level.</p>
+    <div class="cred-grid">
+      <div class="cred-card">
+        <div class="cred-card-icon">🏛️</div>
+        <div class="cred-card-title">SAM.gov — System for Award Management</div>
+        <p class="cred-card-desc">Active federal registration required for all federal prime contracts and subcontract awards. UEI and CAGE code on file.</p>
+        <div class="badge-active"><span class="badge-dot"></span>Active Registration</div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-card-icon">📜</div>
+        <div class="cred-card-title">California DGS — Small Business Certified</div>
+        <p class="cred-card-desc">Certified Small Business through the California Department of General Services, enabling access to state set-aside contracts via Cal eProcure.</p>
+        <div class="badge-active"><span class="badge-dot"></span>State Certified</div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-card-icon">🏙️</div>
+        <div class="cred-card-title">County Vendor Portals — CA Local Government</div>
+        <p class="cred-card-desc">Registered across California county procurement portals including Santa Clara County and LA County for direct local RFP participation.</p>
+        <div class="badge-active"><span class="badge-dot"></span>Multi-County Registered</div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-card-icon">🔐</div>
+        <div class="cred-card-title">CMMC Level 1 / Level 2 Ready</div>
+        <p class="cred-card-desc">Cybersecurity Maturity Model Certification readiness for DoD contract eligibility. NIST 800-171 aligned operations across all managed environments.</p>
+        <div class="badge-active"><span class="badge-dot"></span>CMMC Ready</div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-card-icon">♿</div>
+        <div class="cred-card-title">Section 508 — Accessibility Compliance</div>
+        <p class="cred-card-desc">All digital deliverables meet Section 508 of the Rehabilitation Act and WCAG 2.1 AA standards for federal accessibility requirements.</p>
+        <div class="badge-active"><span class="badge-dot"></span>508 Compliant</div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-card-icon">🏢</div>
+        <div class="cred-card-title">Small Business Enterprise — California</div>
+        <p class="cred-card-desc">SBE-certified for California state and local government procurement preferences. Eligible for SB set-aside and preference program awards.</p>
+        <div class="badge-active"><span class="badge-dot"></span>SBE Certified</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NAICS + VEHICLES -->
+<section class="section bg-navy">
+  <div class="section-inner">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start" class="two-col">
+      <div>
+        <div class="section-tag">NAICS Codes</div>
+        <h2 class="section-title section-title-light">Industry Classification</h2>
+        <p class="section-desc section-desc-light">RDesk Services LLC is registered under four NAICS codes covering the full spectrum of our IT and consulting capabilities.</p>
+        <table class="naics-table" style="margin-top:2rem">
+          <thead><tr><th>Code</th><th>Description</th><th>Type</th></tr></thead>
+          <tbody>
+            <tr><td>541512</td><td>Computer Systems Design Services</td><td>Primary</td></tr>
+            <tr><td>541513</td><td>Computer Facilities Management Services</td><td>Secondary</td></tr>
+            <tr><td>541519</td><td>Other Computer-Related Services</td><td>Secondary</td></tr>
+            <tr><td>541611</td><td>Administrative Management Consulting</td><td>Secondary</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div class="section-tag">Contract Vehicles</div>
+        <h2 class="section-title section-title-light">Vehicles Pursued</h2>
+        <p class="section-desc section-desc-light">Active pursuit of federal and state contract vehicles to expand our procurement reach and simplify the award process for agency clients.</p>
+        <div class="vehicles-grid">
+          <span class="vehicle-badge">GSA MAS</span>
+          <span class="vehicle-badge">SEWP V</span>
+          <span class="vehicle-badge">State MSA</span>
+          <span class="vehicle-badge">BPA</span>
+          <span class="vehicle-badge">IDIQ</span>
+          <span class="vehicle-badge">County RFP</span>
+          <span class="vehicle-badge">Sole Source</span>
+          <span class="vehicle-badge">T&M</span>
+          <span class="vehicle-badge">FFP</span>
+        </div>
+        <div style="margin-top:2.5rem">
+          <div class="section-tag">Teaming</div>
+          <h3 style="font-family:'Syne',sans-serif;font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:.6rem">Subcontractor & Teaming</h3>
+          <p style="font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.7">Open to subcontractor and prime/sub teaming arrangements on larger federal and state awards. Contact us with your opportunity details and we'll confirm fit and capacity.</p>
+          <a href="contact.html" class="btn-primary" style="margin-top:1.25rem;display:inline-flex">Discuss Teaming Opportunity ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES DOWNLOAD + PORTALS -->
+<section class="section">
+  <div class="section-inner">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem" class="two-col">
+      <div>
+        <div class="section-tag">Capabilities Statement</div>
+        <h2 class="section-title">One-Page Summary</h2>
+        <p class="section-desc">Our capabilities statement is formatted to APTAC and SBA standards — core competencies, differentiators, past performance, NAICS codes, and CAGE code all on one page.</p>
+        <div class="caps-download">
+          <div class="caps-download-text">
+            <h3>Download Capabilities Statement</h3>
+            <p>PDF · 1 page · Updated 2025 · Includes CAGE code, UEI, NAICS, past performance</p>
+          </div>
+          <button class="caps-dl-btn"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2v7M4 6l3 3 3-3M2 10v2h10v-2"/></svg>Download PDF</button>
+        </div>
+        <div style="margin-top:2rem;padding:1.25rem;background:var(--off-white);border:1px solid var(--gray-200);border-radius:var(--radius-md)">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:.75rem">Registration Summary</div>
+          <div style="display:flex;flex-direction:column;gap:.5rem">
+            <div style="display:flex;justify-content:space-between;font-size:.875rem;padding:.4rem 0;border-bottom:1px solid var(--gray-100)"><span style="color:var(--text-secondary)">Legal Name</span><span style="font-weight:600;color:var(--navy)">RDesk Services LLC</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:.875rem;padding:.4rem 0;border-bottom:1px solid var(--gray-100)"><span style="color:var(--text-secondary)">SAM.gov Status</span><span class="badge-active" style="font-size:11px"><span class="badge-dot"></span>Active</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:.875rem;padding:.4rem 0;border-bottom:1px solid var(--gray-100)"><span style="color:var(--text-secondary)">Primary NAICS</span><span style="font-family:'DM Mono',monospace;color:var(--gold);font-size:.82rem">541512</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:.875rem;padding:.4rem 0;border-bottom:1px solid var(--gray-100)"><span style="color:var(--text-secondary)">Business Type</span><span style="font-weight:600;color:var(--navy)">Small Business (SB)</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:.875rem;padding:.4rem 0;border-bottom:1px solid var(--gray-100)"><span style="color:var(--text-secondary)">State</span><span style="font-weight:600;color:var(--navy)">California</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:.875rem;padding:.4rem 0"><span style="color:var(--text-secondary)">Website</span><span style="font-family:'DM Mono',monospace;font-size:.82rem;color:var(--navy)">rdeskservices.com</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section-tag">Procurement Portals</div>
+        <h2 class="section-title">Where We're Registered</h2>
+        <p class="section-desc">Active registrations on federal, state, and local procurement platforms where agencies post and award contracts.</p>
+        <div class="portal-list" style="background:var(--navy);border-radius:var(--radius-xl);padding:1.5rem;margin-top:1.5rem">
+          <div class="portal-item"><div class="portal-icon">🏛️</div><div><div class="portal-name">SAM.gov</div><div class="portal-sub">Federal · sam.gov · System for Award Management</div></div><div class="status-dot" style="margin-left:auto"></div></div>
+          <div class="portal-item"><div class="portal-icon">🌐</div><div><div class="portal-name">Cal eProcure</div><div class="portal-sub">CA State · caleprocure.ca.gov · DGS</div></div><div class="status-dot" style="margin-left:auto"></div></div>
+          <div class="portal-item"><div class="portal-icon">🏙️</div><div><div class="portal-name">Santa Clara County</div><div class="portal-sub">County · Local RFP participation</div></div><div class="status-dot" style="margin-left:auto"></div></div>
+          <div class="portal-item"><div class="portal-icon">🏙️</div><div><div class="portal-name">LA County Vendor Registry</div><div class="portal-sub">County · lavss.lacounty.gov</div></div><div class="status-dot" style="margin-left:auto"></div></div>
+          <div class="portal-item"><div class="portal-icon">📋</div><div><div class="portal-name">BidSync / Periscope S2G</div><div class="portal-sub">Multi-agency · State & local RFPs</div></div><div class="status-dot" style="margin-left:auto"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-navy">
+  <div class="section-inner" style="text-align:center">
+    <div class="section-tag" style="justify-content:center">Contact Us</div>
+    <h2 class="section-title section-title-light">Have an RFP or Opportunity?</h2>
+    <p class="section-desc section-desc-light" style="margin:0 auto 2rem;text-align:center">Submit your RFP details, teaming inquiry, or scope of work and we'll respond within one business day.</p>
+    <a href="contact.html" class="btn-primary">Submit RFP Inquiry <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg></a>
+  </div>
+</section>
+
+<footer class="footer"><div class="footer-inner">
+  <div class="footer-top">
+    <div><div class="nav-logo-mark" style="width:44px;height:44px;font-size:20px">R</div><div class="nav-logo-text" style="margin-top:.75rem">RDesk Services LLC<span>Managed IT & Cybersecurity</span></div><p class="footer-brand-desc">Delivering enterprise IT and cybersecurity to government agencies and regulated industries.</p></div>
+    <div><div class="footer-col-title">Services</div><ul class="footer-links"><li><a href="services.html">Network Management</a></li><li><a href="services.html">Cybersecurity & SOC</a></li><li><a href="services.html">Cloud Infrastructure</a></li><li><a href="services.html">Managed Help Desk</a></li></ul></div>
+    <div><div class="footer-col-title">Government</div><ul class="footer-links"><li><a href="government.html">SAM.gov Registration</a></li><li><a href="government.html">Capabilities Statement</a></li><li><a href="government.html">NAICS Codes</a></li><li><a href="compliance.html">Compliance Frameworks</a></li><li><a href="contact.html">Submit RFP Inquiry</a></li></ul></div>
+    <div><div class="footer-col-title">Registration</div><div class="footer-reg"><div class="footer-reg-item"><strong>Entity:</strong> RDesk Services LLC</div><div class="footer-reg-item"><strong>SAM.gov:</strong> Active</div><div class="footer-reg-item"><strong>Primary NAICS:</strong> 541512</div><div class="footer-reg-item"><strong>SB Status:</strong> Small Business</div><div class="footer-reg-item"><strong>Email:</strong> info@rdeskservices.com</div></div></div>
+  </div>
+  <div class="footer-bottom"><div class="footer-copy">© 2025 RDesk Services LLC. All rights reserved.</div><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Accessibility</a></div></div>
+</div></footer>
+<script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}function closeMenu(){document.getElementById('mobileMenu').classList.remove('open')}window.addEventListener('scroll',function(){document.querySelector('.nav').style.boxShadow=window.scrollY>80?'0 4px 24px rgba(6,15,30,.5)':'none'});</script>
+</body></html>

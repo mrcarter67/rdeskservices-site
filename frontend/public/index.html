@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>RDesk Services LLC — Managed IT & Cybersecurity | Government Contracts</title>
+<meta name="description" content="RDesk Services LLC provides managed IT, cybersecurity, and network solutions for government, state, county, and enterprise clients. SAM.gov registered. NAICS 541512."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/png" href="/images/rdesklogo2.webp" sizes="64x64"/>
+<link rel="canonical" href="https://rdeskservices.com/"/>
+<meta name="robots" content="index, follow"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://rdeskservices.com/"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+/* ── HOME-ONLY STYLES ── */
+.hero{min-height:100vh;background:var(--navy-deep);position:relative;display:flex;align-items:center;overflow:hidden;padding:120px 2rem 80px}
+.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(200,146,42,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(200,146,42,.06) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.hero-glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(200,146,42,.12) 0%,transparent 65%);top:-100px;right:-100px;pointer-events:none}
+.hero-glow-2{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(24,64,120,.4) 0%,transparent 65%);bottom:-50px;left:-80px;pointer-events:none}
+.hero-inner{max-width:1280px;margin:0 auto;width:100%;position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,146,42,.12);border:1px solid rgba(200,146,42,.28);color:var(--gold-light);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.4rem 1rem;border-radius:100px;margin-bottom:1.5rem}
+.hero-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
+.hero h1{font-family:'Syne',sans-serif;font-size:clamp(2.4rem,4.5vw,3.6rem);font-weight:800;color:var(--white);line-height:1.1;margin-bottom:1.25rem;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--gold-light)}
+.hero-desc{font-size:1.05rem;color:rgba(255,255,255,.65);line-height:1.75;margin-bottom:2rem;max-width:520px}
+.hero-actions{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.hero-stats{display:flex;gap:2rem;margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.1);flex-wrap:wrap}
+.hero-stat-num{font-family:'Syne',sans-serif;font-size:1.75rem;font-weight:800;color:var(--gold-light);line-height:1}
+.hero-stat-label{font-size:12px;color:rgba(255,255,255,.45);margin-top:4px;text-transform:uppercase;letter-spacing:.07em}
+.hero-right{position:relative}
+.hero-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:1.5rem;backdrop-filter:blur(8px)}
+.hero-card-title{font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-light);margin-bottom:1rem}
+.credential-row{display:flex;align-items:center;gap:12px;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.credential-row:last-child{border-bottom:none}
+.credential-icon{width:32px;height:32px;border-radius:var(--radius-sm);background:rgba(200,146,42,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px}
+.credential-label{font-size:13px;font-weight:500;color:var(--white);line-height:1.2}
+.credential-sub{font-size:11px;color:rgba(255,255,255,.42);font-family:'DM Mono',monospace;margin-top:1px}
+.hero-floating-badge{position:absolute;top:-16px;right:-16px;background:var(--gold);color:var(--navy);font-family:'Syne',sans-serif;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.5rem .85rem;border-radius:var(--radius-md);box-shadow:0 4px 16px rgba(200,146,42,.4)}
+/* services grid */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+.service-icon{width:48px;height:48px;background:var(--navy);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;font-size:22px}
+.service-name{font-family:'Syne',sans-serif;font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:.5rem}
+.service-desc{font-size:.9rem;color:var(--text-secondary);line-height:1.65}
+.service-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+.service-tag{font-size:11px;font-weight:600;color:var(--slate);background:var(--gray-100);padding:3px 10px;border-radius:100px;letter-spacing:.02em}
+/* industries */
+.industries-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:3rem}
+.industry-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;transition:var(--transition)}
+.industry-card:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+.industry-icon{font-size:2rem;margin-bottom:.75rem;line-height:1}
+.industry-name{font-family:'Syne',sans-serif;font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:.35rem}
+.industry-desc{font-size:.8rem;color:var(--text-secondary);line-height:1.55}
+/* why metrics */
+.why-feat{display:flex;align-items:flex-start;gap:1rem;padding:1rem;border-radius:var(--radius-md);transition:var(--transition);border:1px solid transparent}
+.why-feat:hover{background:var(--off-white);border-color:var(--gray-200)}
+.why-feat-dot{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--navy);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;margin-top:2px}
+.why-feat-title{font-weight:600;font-size:.92rem;color:var(--navy);margin-bottom:.3rem}
+.why-feat-desc{font-size:.85rem;color:var(--text-secondary);line-height:1.6}
+/* gov */
+.gov-cred-icon{width:42px;height:42px;border-radius:var(--radius-sm);background:rgba(200,146,42,.12);border:1px solid rgba(200,146,42,.2);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.gov-cred-label{font-weight:600;font-size:.9rem;color:var(--white)}
+.gov-cred-value{font-family:'DM Mono',monospace;font-size:.8rem;color:var(--gold-light);margin-top:2px}
+.naics-code{font-family:'DM Mono',monospace;font-size:.8rem;color:var(--gold);font-weight:500;flex-shrink:0;width:65px}
+.naics-desc{font-size:.82rem;color:rgba(255,255,255,.65)}
+/* compliance */
+.compliance-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;margin-top:3rem}
+.compliance-card{background:var(--white);border:1px solid var(--gray-200);border-left:4px solid var(--gold);border-radius:var(--radius-md);padding:1.25rem;transition:var(--transition)}
+.compliance-card:hover{box-shadow:var(--shadow-sm);transform:translateY(-2px)}
+.compliance-name{font-family:'Syne',sans-serif;font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:.4rem}
+.compliance-detail{font-size:.82rem;color:var(--text-secondary);line-height:1.55}
+/* rfp form */
+.rfp-form{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-xl);padding:2rem}
+.rfp-form-title{font-family:'Syne',sans-serif;font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:1.5rem}
+.rfp-point{display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:rgba(255,255,255,.7)}
+.rfp-point-check{width:20px;height:20px;border-radius:50%;background:rgba(200,146,42,.15);border:1px solid rgba(200,146,42,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.rfp-point-check svg{width:10px;height:10px;stroke:var(--gold-light);fill:none;stroke-width:2.5}
+@media(max-width:1024px){.hero-inner{grid-template-columns:1fr}.hero-right{display:none}}
+</style>
+</head>
+<body>
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-mark">R</div>
+      <div class="nav-logo-text">RDesk Services<span>LLC · Managed IT & Cybersecurity</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="government.html">Government</a></li>
+      <li><a href="compliance.html">Compliance</a></li>
+      <li><a href="industries.html">Industries</a></li>
+      <li><a href="contact.html" class="nav-cta">Submit RFP Inquiry ↗</a></li>
+    </ul>
+    <button class="nav-mobile-toggle" onclick="toggleMenu()" aria-label="Menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2"><line x1="2" y1="7" x2="20" y2="7"/><line x1="2" y1="11" x2="20" y2="11"/><line x1="2" y1="15" x2="20" y2="15"/></svg>
+    </button>
+  </div>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="services.html" onclick="closeMenu()">Services</a>
+    <a href="government.html" onclick="closeMenu()">Government</a>
+    <a href="compliance.html" onclick="closeMenu()">Compliance</a>
+    <a href="industries.html" onclick="closeMenu()">Industries</a>
+    <a href="contact.html" onclick="closeMenu()">Submit RFP Inquiry ↗</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge"><span class="hero-badge-dot"></span>SAM.gov Registered · Active Vendor</div>
+      <h1>Enterprise IT &amp;<br/><em>Cybersecurity</em><br/>Built for Gov</h1>
+      <p class="hero-desc">RDesk Services LLC delivers mission-critical managed IT, network security, and cloud infrastructure to federal, state, county, and enterprise clients — with the compliance posture government contracts demand.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn-primary">Submit RFP Inquiry <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg></a>
+        <a href="government.html" class="btn-outline-light">View Credentials</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hero-stat-num">50+</div><div class="hero-stat-label">Years Combined Exp.</div></div>
+        <div><div class="hero-stat-num">24/7</div><div class="hero-stat-label">SOC Monitoring</div></div>
+        <div><div class="hero-stat-num">4</div><div class="hero-stat-label">NAICS Codes</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div style="position:relative">
+        <div class="hero-floating-badge">Gov-Ready</div>
+        <div class="hero-card">
+          <div class="hero-card-title">Vendor Credentials</div>
+          <div class="credential-row"><div class="credential-icon">🏛️</div><div><div class="credential-label">SAM.gov Registration</div><div class="credential-sub">System for Award Management</div></div><div class="status-dot"></div></div>
+          <div class="credential-row"><div class="credential-icon">🔒</div><div><div class="credential-label">Small Business Certified</div><div class="credential-sub">SB · NAICS 541512 Primary</div></div><div class="status-dot"></div></div>
+          <div class="credential-row"><div class="credential-icon">🛡️</div><div><div class="credential-label">NIST 800-171 Aligned</div><div class="credential-sub">CIS Controls · CMMC Ready</div></div><div class="status-dot"></div></div>
+          <div class="credential-row"><div class="credential-icon">📋</div><div><div class="credential-label">Cal eProcure Registered</div><div class="credential-sub">CA DGS · State Contracts</div></div><div class="status-dot"></div></div>
+          <div class="credential-row"><div class="credential-icon">🌐</div><div><div class="credential-label">Section 508 Compliant</div><div class="credential-sub">ADA · WCAG 2.1 AA</div></div><div class="status-dot"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 10"><polyline points="1.5,5.5 4,8 8.5,2"/></svg></div><span class="trust-label">SAM.gov Registered</span></div>
+    <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 10"><polyline points="1.5,5.5 4,8 8.5,2"/></svg></div><span class="trust-label">Small Business Certified</span></div>
+    <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 10"><polyline points="1.5,5.5 4,8 8.5,2"/></svg></div><span class="trust-label">NIST 800-171 Aligned</span></div>
+    <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 10"><polyline points="1.5,5.5 4,8 8.5,2"/></svg></div><span class="trust-label">Cal eProcure Vendor</span></div>
+    <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 10"><polyline points="1.5,5.5 4,8 8.5,2"/></svg></div><span class="trust-label">Section 508 Compliant</span></div>
+    <div class="trust-naics">NAICS 541512 · 541513 · 541519 · 541611</div>
+  </div>
+</div>
+
+<!-- SERVICES PREVIEW -->
+<section class="section bg-off">
+  <div class="section-inner">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;margin-bottom:3.5rem;flex-wrap:wrap">
+      <div>
+        <div class="section-tag">Core Capabilities</div>
+        <h2 class="section-title">Full-Spectrum IT Solutions</h2>
+        <p class="section-desc">Comprehensive managed services built to meet the demands of government procurement and enterprise-scale operations.</p>
+      </div>
+      <a href="services.html" class="btn-outline-dark">All Services →</a>
+    </div>
+    <div class="services-grid">
+      <div class="card card-accent"><div class="service-icon">🌐</div><div class="service-name">Network Management</div><p class="service-desc">Enterprise network design, VLAN segmentation, FortiGate firewall administration, monitoring, and 24/7 NOC support.</p><div class="service-tags"><span class="service-tag">FortiGate</span><span class="service-tag">VLAN</span><span class="service-tag">NOC 24/7</span><span class="service-tag">SD-WAN</span></div></div>
+      <div class="card card-accent"><div class="service-icon">🛡️</div><div class="service-name">Cybersecurity & SOC</div><p class="service-desc">Threat detection, incident response, Microsoft 365 Defender, endpoint protection, BEC monitoring, and Splunk SIEM.</p><div class="service-tags"><span class="service-tag">M365 Defender</span><span class="service-tag">Splunk</span><span class="service-tag">Bitdefender</span><span class="service-tag">BEC Response</span></div></div>
+      <div class="card card-accent"><div class="service-icon">☁️</div><div class="service-name">Cloud Infrastructure</div><p class="service-desc">Microsoft Azure and M365 administration, cloud migrations, hybrid environments, identity management, and compliance architecture.</p><div class="service-tags"><span class="service-tag">Azure</span><span class="service-tag">Microsoft 365</span><span class="service-tag">Entra ID</span></div></div>
+      <div class="card card-accent"><div class="service-icon">💻</div><div class="service-name">Managed Help Desk</div><p class="service-desc">Tier 1–3 support, endpoint management, patch administration, hardware lifecycle, and SLA-backed response windows.</p><div class="service-tags"><span class="service-tag">Tier 1–3</span><span class="service-tag">Endpoint Mgmt</span><span class="service-tag">SLA Backed</span></div></div>
+      <div class="card card-accent"><div class="service-icon">🏗️</div><div class="service-name">IT Transition Services</div><p class="service-desc">Seamless vendor transitions, contract exit strategy, system migrations, and phone/internet changeovers with zero-downtime planning.</p><div class="service-tags"><span class="service-tag">Vendor Exit</span><span class="service-tag">Migration</span><span class="service-tag">VoIP</span></div></div>
+      <div class="card card-accent"><div class="service-icon">🗄️</div><div class="service-name">Data Center Ops</div><p class="service-desc">Server administration, virtualization, backup and disaster recovery, storage management, and compliance-ready infrastructure.</p><div class="service-tags"><span class="service-tag">Virtualization</span><span class="service-tag">DR/BCP</span><span class="service-tag">Backup</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GOV PREVIEW -->
+<section class="section bg-navy">
+  <div class="section-inner">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;margin-bottom:3rem;flex-wrap:wrap">
+      <div>
+        <div class="section-tag">Government Hub</div>
+        <h2 class="section-title section-title-light">Procurement-Ready.<br/>Contract-Experienced.</h2>
+        <p class="section-desc section-desc-light">All registrations, certifications, and compliance documentation required for federal, state, and local government contracts.</p>
+      </div>
+      <a href="government.html" class="btn-primary">Full Gov Profile →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem">
+      <div class="card-dark" style="display:flex;align-items:center;gap:1rem"><div class="gov-cred-icon">🏛️</div><div><div class="gov-cred-label">SAM.gov — System for Award Management</div><div class="gov-cred-value">Active Registration · Federal Procurement</div></div></div>
+      <div class="card-dark" style="display:flex;align-items:center;gap:1rem"><div class="gov-cred-icon">📜</div><div><div class="gov-cred-label">California DGS Small Business</div><div class="gov-cred-value">Cal eProcure · State Contract Vehicle</div></div></div>
+      <div class="card-dark" style="display:flex;align-items:center;gap:1rem"><div class="gov-cred-icon">🔐</div><div><div class="gov-cred-label">CMMC Level 1/2 — Cyber Readiness</div><div class="gov-cred-value">DoD Cybersecurity Maturity Model</div></div></div>
+      <div class="card-dark" style="display:flex;align-items:center;gap:1rem"><div class="gov-cred-icon">🏙️</div><div><div class="gov-cred-label">County Vendor Portals — CA Local Gov</div><div class="gov-cred-value">Santa Clara · LA County · Bay Area</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY RDESK -->
+<section class="section">
+  <div class="section-inner">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center" class="two-col">
+      <div>
+        <div class="section-tag">Why RDesk</div>
+        <h2 class="section-title">Speed, Security,<br/>and Accountability</h2>
+        <p class="section-desc">We don't just manage infrastructure — we serve as a strategic IT partner with the responsiveness government clients require.</p>
+        <div style="display:flex;flex-direction:column;gap:1.25rem;margin-top:2rem">
+          <div class="why-feat"><div class="why-feat-dot">⚡</div><div><div class="why-feat-title">Rapid Incident Response</div><div class="why-feat-desc">Hands-on cybersecurity response with same-day escalation protocols. We act on active threats immediately.</div></div></div>
+          <div class="why-feat"><div class="why-feat-dot">📋</div><div><div class="why-feat-title">Documentation-First Operations</div><div class="why-feat-desc">Every engagement is fully documented — audit trails, change logs, incident reports — ready for government oversight.</div></div></div>
+          <div class="why-feat"><div class="why-feat-dot">🤝</div><div><div class="why-feat-title">SLA-Backed Commitments</div><div class="why-feat-desc">Written service level agreements with defined response windows, escalation paths, and performance accountability.</div></div></div>
+          <div class="why-feat"><div class="why-feat-dot">🔎</div><div><div class="why-feat-title">Vendor-Neutral Recommendations</div><div class="why-feat-desc">We evaluate technology on fit and security — not commissions. Our recommendations serve the mission.</div></div></div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+        <div style="background:var(--navy);border-radius:var(--radius-xl);padding:2rem;text-align:center;grid-column:1/-1"><div style="font-family:'Syne',sans-serif;font-size:3rem;font-weight:800;color:var(--gold-light);line-height:1">50+</div><div style="font-size:11px;color:rgba(255,255,255,.5);margin-top:.5rem;letter-spacing:.04em;text-transform:uppercase">Years Combined Expertise</div></div>
+        <div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:1.5rem;text-align:center"><div style="font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--navy);line-height:1">24/7</div><div style="font-size:11px;color:var(--text-secondary);margin-top:.35rem;letter-spacing:.04em;text-transform:uppercase">Monitoring</div></div>
+        <div style="background:var(--gold);border-radius:var(--radius-lg);padding:1.5rem;text-align:center"><div style="font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--navy);line-height:1">&lt;2hr</div><div style="font-size:11px;color:rgba(11,31,58,.65);margin-top:.35rem;letter-spacing:.04em;text-transform:uppercase">Response SLA</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES PREVIEW -->
+<section class="section bg-off">
+  <div class="section-inner">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;margin-bottom:1rem;flex-wrap:wrap">
+      <div>
+        <div class="section-tag">Industries Served</div>
+        <h2 class="section-title">Sector Experience</h2>
+        <p class="section-desc">Proven delivery across regulated, high-stakes industries that demand security, uptime, and compliance.</p>
+      </div>
+      <a href="industries.html" class="btn-outline-dark">All Industries →</a>
+    </div>
+    <div class="industries-grid">
+      <div class="industry-card"><div class="industry-icon">🏛️</div><div class="industry-name">Government & Public Sector</div><div class="industry-desc">Federal, state, and county IT with full compliance documentation</div></div>
+      <div class="industry-card"><div class="industry-icon">⚖️</div><div class="industry-name">Legal</div><div class="industry-desc">Data security, e-discovery support, and confidential communications</div></div>
+      <div class="industry-card"><div class="industry-icon">🔬</div><div class="industry-name">Biotech & Life Sciences</div><div class="industry-desc">Regulated environments with IP protection and audit logging</div></div>
+      <div class="industry-card"><div class="industry-icon">🏭</div><div class="industry-name">Manufacturing</div><div class="industry-desc">OT/IT convergence, network segmentation, and operational continuity</div></div>
+      <div class="industry-card"><div class="industry-icon">⚡</div><div class="industry-name">Energy & Utilities</div><div class="industry-desc">Critical infrastructure protection and regulatory compliance</div></div>
+      <div class="industry-card"><div class="industry-icon">🎓</div><div class="industry-name">Education</div><div class="industry-desc">K–12 and higher ed IT modernization and CIPA compliance</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- RFP CTA STRIP -->
+<section class="section bg-navy">
+  <div class="section-inner" style="text-align:center">
+    <div class="section-tag" style="justify-content:center">RFP & Contract Inquiries</div>
+    <h2 class="section-title section-title-light" style="margin:0 auto .75rem">Ready to Respond to Your RFP</h2>
+    <p class="section-desc section-desc-light" style="margin:0 auto 2rem;text-align:center">Federal, state, county, or enterprise — tell us your scope and we respond within one business day.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="contact.html" class="btn-primary">Submit RFP Inquiry <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M7 2l5 5-5 5"/></svg></a>
+      <a href="government.html" class="btn-outline-light">View Capabilities Statement</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="nav-logo-mark" style="width:44px;height:44px;font-size:20px">R</div>
+        <div class="nav-logo-text" style="margin-top:.75rem">RDesk Services LLC<span>Managed IT & Cybersecurity</span></div>
+        <p class="footer-brand-desc">Delivering enterprise IT and cybersecurity to government agencies and regulated industries. Trusted. Compliant. Responsive.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Network Management</a></li>
+          <li><a href="services.html">Cybersecurity & SOC</a></li>
+          <li><a href="services.html">Cloud Infrastructure</a></li>
+          <li><a href="services.html">Managed Help Desk</a></li>
+          <li><a href="services.html">IT Transitions</a></li>
+          <li><a href="services.html">Data Center Ops</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Government</div>
+        <ul class="footer-links">
+          <li><a href="government.html">SAM.gov Registration</a></li>
+          <li><a href="government.html">Capabilities Statement</a></li>
+          <li><a href="government.html">NAICS Codes</a></li>
+          <li><a href="compliance.html">Compliance Frameworks</a></li>
+          <li><a href="contact.html">Submit RFP Inquiry</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Registration</div>
+        <div class="footer-reg">
+          <div class="footer-reg-item"><strong>Entity:</strong> RDesk Services LLC</div>
+          <div class="footer-reg-item"><strong>SAM.gov:</strong> Active</div>
+          <div class="footer-reg-item"><strong>Primary NAICS:</strong> 541512</div>
+          <div class="footer-reg-item"><strong>SB Status:</strong> Small Business</div>
+          <div class="footer-reg-item"><strong>Cal eProcure:</strong> Registered</div>
+          <div class="footer-reg-item"><strong>Email:</strong> info@rdeskservices.com</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 RDesk Services LLC. All rights reserved.</div>
+      <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Accessibility</a></div>
+    </div>
+  </div>
+</footer>
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open')}
+window.addEventListener('scroll',function(){document.querySelector('.nav').style.boxShadow=window.scrollY>80?'0 4px 24px rgba(6,15,30,.5)':'none'});
+</script>
+</body>
+</html>

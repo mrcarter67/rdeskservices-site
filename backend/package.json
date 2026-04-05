@@ -15,7 +15,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build:ui": "rm -rf dist && cd ../frontend/ && npm install && npm run build && cp -r dist ../backend",
+    "build:ui": "rm -rf dist && cd ../frontend/ && npm install && npm run build && cp -r dist ../backend && cp public/index.html ../backend/dist/index.html",
     "fullstart": "npm run build:ui && npm start"
   }
 }

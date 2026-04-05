@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>RFP Inquiry & Contact — RDesk Services LLC</title>
+<meta name="description" content="Submit an RFP inquiry, teaming request, or general contact to RDesk Services LLC. Federal, state, county, and enterprise IT and cybersecurity engagements."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/png" href="/images/rdesklogo2.webp" sizes="64x64"/>
+<link rel="canonical" href="https://rdeskservices.com/contact.html"/>
+<meta name="robots" content="index, follow"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+.contact-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:start;margin-top:3rem}
+.contact-point{display:flex;align-items:flex-start;gap:1rem;padding:1.25rem;background:var(--off-white);border:1px solid var(--gray-200);border-radius:var(--radius-md);margin-bottom:1rem}
+.contact-point-icon{width:40px;height:40px;background:var(--navy);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.contact-point-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:3px}
+.contact-point-value{font-size:.92rem;font-weight:600;color:var(--navy)}
+.contact-form-wrap{background:var(--navy);border-radius:var(--radius-xl);padding:2.25rem}
+.contact-form-title{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800;color:var(--white);margin-bottom:.35rem}
+.contact-form-sub{font-size:.85rem;color:rgba(255,255,255,.5);margin-bottom:1.75rem}
+.rfp-type-grid{display:grid;grid-template-columns:1fr 1fr;gap:.65rem;margin-bottom:1.25rem}
+.rfp-type-btn{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-sm);padding:.65rem 1rem;font-size:13px;font-weight:500;color:rgba(255,255,255,.65);cursor:pointer;text-align:center;transition:var(--transition);font-family:'DM Sans',sans-serif}
+.rfp-type-btn:hover,.rfp-type-btn.selected{background:rgba(200,146,42,.15);border-color:rgba(200,146,42,.4);color:var(--gold-light)}
+.success-msg{display:none;background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.25);border-radius:var(--radius-md);padding:1.25rem;margin-top:1rem;text-align:center}
+.success-msg-icon{font-size:2rem;margin-bottom:.5rem}
+.success-msg-text{font-size:.9rem;color:#34d399;font-weight:500}
+@media(max-width:1024px){.contact-layout{grid-template-columns:1fr}}
+@media(max-width:600px){.rfp-type-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-mark">R</div><div class="nav-logo-text">RDesk Services<span>LLC · Managed IT & Cybersecurity</span></div></a>
+    <ul class="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="government.html">Government</a></li>
+      <li><a href="compliance.html">Compliance</a></li>
+      <li><a href="industries.html">Industries</a></li>
+      <li><a href="contact.html" class="nav-cta active">Submit RFP Inquiry ↗</a></li>
+    </ul>
+    <button class="nav-mobile-toggle" onclick="toggleMenu()" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2"><line x1="2" y1="7" x2="20" y2="7"/><line x1="2" y1="11" x2="20" y2="11"/><line x1="2" y1="15" x2="20" y2="15"/></svg></button>
+  </div>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="services.html" onclick="closeMenu()">Services</a><a href="government.html" onclick="closeMenu()">Government</a><a href="compliance.html" onclick="closeMenu()">Compliance</a><a href="industries.html" onclick="closeMenu()">Industries</a><a href="contact.html" onclick="closeMenu()">Submit RFP Inquiry ↗</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-grid"></div><div class="page-hero-glow"></div>
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Contact & RFP Inquiry</span></div>
+    <div class="page-hero-tag">RFP & Contract Inquiries</div>
+    <h1>Let's Respond<br/>to Your <em>RFP</em></h1>
+    <p class="page-hero-desc">Federal, state, county, or enterprise — tell us your scope and timeline. We respond within one business day with a capability confirmation or proposal outline.</p>
+  </div>
+</section>
+
+<div class="trust-bar"><div class="trust-bar-inner">
+  <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 10"><polyline points="1.5,5.5 4,8 8.5,2"/></svg></div><span class="trust-label">SAM.gov Registered</span></div>
+  <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 10"><polyline points="1.5,5.5 4,8 8.5,2"/></svg></div><span class="trust-label">Small Business Certified</span></div>
+  <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 10"><polyline points="1.5,5.5 4,8 8.5,2"/></svg></div><span class="trust-label">NIST 800-171 Aligned</span></div>
+  <div class="trust-item"><div class="trust-check"><svg viewBox="0 0 10 10"><polyline points="1.5,5.5 4,8 8.5,2"/></svg></div><span class="trust-label">Section 508 Compliant</span></div>
+  <div class="trust-naics">NAICS 541512 · 541513 · 541519 · 541611</div>
+</div></div>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="contact-layout">
+      <!-- LEFT -->
+      <div>
+        <div class="section-tag">Contact Info</div>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-desc">Reach us directly or use the form. All inquiries are reviewed by our principal team — not a call center.</p>
+        <div style="margin-top:2rem">
+          <div class="contact-point">
+            <div class="contact-point-icon">📧</div>
+            <div><div class="contact-point-label">Email</div><div class="contact-point-value">info@rdeskservices.com</div></div>
+          </div>
+          <div class="contact-point">
+            <div class="contact-point-icon">🌐</div>
+            <div><div class="contact-point-label">Website</div><div class="contact-point-value">rdeskservices.com</div></div>
+          </div>
+          <div class="contact-point">
+            <div class="contact-point-icon">📞</div>
+            <div><div class="contact-point-label">Phone</div><div class="contact-point-value"><a href="tel:8315294490" style="color:inherit;text-decoration:none">(831) 529-4490</a></div></div>
+          </div>
+          <div class="contact-point">
+            <div class="contact-point-icon">📍</div>
+            <div><div class="contact-point-label">Base Location</div><div class="contact-point-value">San Jose, California</div></div>
+          </div>
+          <div class="contact-point">
+            <div class="contact-point-icon">⏱️</div>
+            <div><div class="contact-point-label">Response Time</div><div class="contact-point-value">Within 1 business day</div></div>
+          </div>
+        </div>
+
+        <div style="margin-top:2.5rem">
+          <div class="section-tag">What We Can Help With</div>
+          <div style="display:flex;flex-direction:column;gap:.65rem;margin-top:1rem">
+            <div style="display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:var(--text-secondary)"><div style="width:20px;height:20px;border-radius:50%;background:rgba(200,146,42,.15);border:1px solid rgba(200,146,42,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><polyline points="1.5,5.5 4,8 8.5,2" stroke="#c8922a" stroke-width="2"/></svg></div>Federal, state, and county RFP responses</div>
+            <div style="display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:var(--text-secondary)"><div style="width:20px;height:20px;border-radius:50%;background:rgba(200,146,42,.15);border:1px solid rgba(200,146,42,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><polyline points="1.5,5.5 4,8 8.5,2" stroke="#c8922a" stroke-width="2"/></svg></div>Subcontractor and teaming arrangements</div>
+            <div style="display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:var(--text-secondary)"><div style="width:20px;height:20px;border-radius:50%;background:rgba(200,146,42,.15);border:1px solid rgba(200,146,42,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><polyline points="1.5,5.5 4,8 8.5,2" stroke="#c8922a" stroke-width="2"/></svg></div>Enterprise managed services agreements</div>
+            <div style="display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:var(--text-secondary)"><div style="width:20px;height:20px;border-radius:50%;background:rgba(200,146,42,.15);border:1px solid rgba(200,146,42,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><polyline points="1.5,5.5 4,8 8.5,2" stroke="#c8922a" stroke-width="2"/></svg></div>Sole-source and emergency IT support</div>
+            <div style="display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:var(--text-secondary)"><div style="width:20px;height:20px;border-radius:50%;background:rgba(200,146,42,.15);border:1px solid rgba(200,146,42,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><polyline points="1.5,5.5 4,8 8.5,2" stroke="#c8922a" stroke-width="2"/></svg></div>Cybersecurity incident response engagements</div>
+            <div style="display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:var(--text-secondary)"><div style="width:20px;height:20px;border-radius:50%;background:rgba(200,146,42,.15);border:1px solid rgba(200,146,42,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><polyline points="1.5,5.5 4,8 8.5,2" stroke="#c8922a" stroke-width="2"/></svg></div>CMMC / NIST 800-171 compliance consulting</div>
+          </div>
+        </div>
+
+        <div style="margin-top:2.5rem;padding:1.25rem;background:var(--navy);border-radius:var(--radius-lg)">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-light);margin-bottom:.85rem">Quick Links</div>
+          <div style="display:flex;flex-direction:column;gap:.5rem">
+            <a href="government.html" style="font-size:.875rem;color:rgba(255,255,255,.6);transition:var(--transition);display:flex;align-items:center;gap:.5rem" onmouseover="this.style.color='#e8b44a'" onmouseout="this.style.color='rgba(255,255,255,.6)'">→ Download Capabilities Statement</a>
+            <a href="government.html" style="font-size:.875rem;color:rgba(255,255,255,.6);transition:var(--transition);display:flex;align-items:center;gap:.5rem" onmouseover="this.style.color='#e8b44a'" onmouseout="this.style.color='rgba(255,255,255,.6)'">→ View NAICS Codes & Registration</a>
+            <a href="compliance.html" style="font-size:.875rem;color:rgba(255,255,255,.6);transition:var(--transition);display:flex;align-items:center;gap:.5rem" onmouseover="this.style.color='#e8b44a'" onmouseout="this.style.color='rgba(255,255,255,.6)'">→ View Compliance Frameworks</a>
+            <a href="services.html" style="font-size:.875rem;color:rgba(255,255,255,.6);transition:var(--transition);display:flex;align-items:center;gap:.5rem" onmouseover="this.style.color='#e8b44a'" onmouseout="this.style.color='rgba(255,255,255,.6)'">→ Full Service Catalog</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div>
+        <div class="contact-form-wrap">
+          <div class="contact-form-title">RFP & Contract Inquiry Form</div>
+          <div class="contact-form-sub">Select inquiry type, fill in your details, and submit. We'll respond within 1 business day.</div>
+
+          <div style="margin-bottom:1.25rem">
+            <div class="form-label">Inquiry Type</div>
+            <div class="rfp-type-grid">
+              <div class="rfp-type-btn selected" onclick="selectType(this)">Federal RFP / RFQ</div>
+              <div class="rfp-type-btn" onclick="selectType(this)">State RFP</div>
+              <div class="rfp-type-btn" onclick="selectType(this)">County / Local RFP</div>
+              <div class="rfp-type-btn" onclick="selectType(this)">Prime / Sub Teaming</div>
+              <div class="rfp-type-btn" onclick="selectType(this)">Enterprise MSP</div>
+              <div class="rfp-type-btn" onclick="selectType(this)">General Inquiry</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group" style="margin-bottom:0"><label class="form-label">First Name *</label><input id="cf-fname" class="form-input form-input-light" type="text" placeholder="First name" required/></div>
+            <div class="form-group" style="margin-bottom:0"><label class="form-label">Last Name *</label><input id="cf-lname" class="form-input form-input-light" type="text" placeholder="Last name" required/></div>
+          </div>
+          <div style="height:.85rem"></div>
+          <div class="form-group"><label class="form-label">Agency / Organization *</label><input id="cf-agency" class="form-input form-input-light" type="text" placeholder="County of Santa Clara / Company Name" required/></div>
+          <div class="form-group"><label class="form-label">Email Address *</label><input id="cf-email" class="form-input form-input-light" type="email" placeholder="you@agency.gov" required/></div>
+          <div class="form-group"><label class="form-label">Phone (Optional)</label><input id="cf-phone" class="form-input form-input-light" type="tel" placeholder="(408) 555-0100"/></div>
+          <div class="form-group">
+            <label class="form-label">Contract Vehicle / Solicitation #</label>
+            <input id="cf-contract" class="form-input form-input-light" type="text" placeholder="e.g. RFP-2025-IT-0042 or GSA MAS"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Scope / Requirements *</label>
+            <textarea id="cf-scope" class="form-textarea form-textarea-light" style="min-height:110px" placeholder="Describe your IT or cybersecurity requirements, scope of work, and any compliance or security framework requirements..." required></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group" style="margin-bottom:0">
+              <label class="form-label">Estimated Timeline</label>
+              <select id="cf-timeline" class="form-select form-select-light">
+                <option value="">Select…</option>
+                <option>Immediate (RFP open now)</option>
+                <option>Within 30 days</option>
+                <option>60–90 days</option>
+                <option>Planning phase (6+ months)</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom:0">
+              <label class="form-label">Estimated Value</label>
+              <select id="cf-value" class="form-select form-select-light">
+                <option value="">Select…</option>
+                <option>Under $50K</option>
+                <option>$50K – $250K</option>
+                <option>$250K – $1M</option>
+                <option>$1M+</option>
+                <option>Unknown / TBD</option>
+              </select>
+            </div>
+          </div>
+          <button class="form-submit" onclick="submitForm(event)" id="submitBtn">Submit Inquiry →</button>
+          <div class="success-msg" id="successMsg">
+            <div class="success-msg-icon">✅</div>
+            <div class="success-msg-text">Inquiry received! We'll respond within 1 business day.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="footer-inner">
+  <div class="footer-top">
+    <div><div class="nav-logo-mark" style="width:44px;height:44px;font-size:20px">R</div><div class="nav-logo-text" style="margin-top:.75rem">RDesk Services LLC<span>Managed IT & Cybersecurity</span></div><p class="footer-brand-desc">Delivering enterprise IT and cybersecurity to government agencies and regulated industries.</p></div>
+    <div><div class="footer-col-title">Services</div><ul class="footer-links"><li><a href="services.html">Network Management</a></li><li><a href="services.html">Cybersecurity & SOC</a></li><li><a href="services.html">Cloud Infrastructure</a></li><li><a href="services.html">Managed Help Desk</a></li></ul></div>
+    <div><div class="footer-col-title">Government</div><ul class="footer-links"><li><a href="government.html">SAM.gov Registration</a></li><li><a href="government.html">NAICS Codes</a></li><li><a href="compliance.html">Compliance Frameworks</a></li><li><a href="contact.html">Submit RFP Inquiry</a></li></ul></div>
+    <div><div class="footer-col-title">Registration</div><div class="footer-reg"><div class="footer-reg-item"><strong>Entity:</strong> RDesk Services LLC</div><div class="footer-reg-item"><strong>SAM.gov:</strong> Active</div><div class="footer-reg-item"><strong>Primary NAICS:</strong> 541512</div><div class="footer-reg-item"><strong>SB Status:</strong> Small Business</div><div class="footer-reg-item"><strong>Email:</strong> info@rdeskservices.com</div></div></div>
+  </div>
+  <div class="footer-bottom"><div class="footer-copy">© 2025 RDesk Services LLC. All rights reserved.</div><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Accessibility</a></div></div>
+</div></footer>
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open')}
+window.addEventListener('scroll',function(){document.querySelector('.nav').style.boxShadow=window.scrollY>80?'0 4px 24px rgba(6,15,30,.5)':'none'});
+function selectType(el){document.querySelectorAll('.rfp-type-btn').forEach(function(b){b.classList.remove('selected')});el.classList.add('selected')}
+async function submitForm(e){
+  e.preventDefault();
+  var btn=document.getElementById('submitBtn');
+  btn.textContent='Submitting…';btn.style.opacity='.7';btn.disabled=true;
+  var type=(document.querySelector('.rfp-type-btn.selected')||{}).textContent||'General Inquiry';
+  var fname=document.getElementById('cf-fname').value.trim();
+  var lname=document.getElementById('cf-lname').value.trim();
+  var agency=document.getElementById('cf-agency').value.trim();
+  var email=document.getElementById('cf-email').value.trim();
+  var phone=document.getElementById('cf-phone').value.trim();
+  var contract=document.getElementById('cf-contract').value.trim();
+  var scope=document.getElementById('cf-scope').value.trim();
+  var timeline=document.getElementById('cf-timeline').value;
+  var value=document.getElementById('cf-value').value;
+  try{
+    var res=await fetch('/api/request',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        name:(fname+' '+lname).trim(),
+        email:email,
+        subject:'RFP Inquiry — '+type,
+        service:type,
+        it_service:timeline,
+        compliance:'',
+        message:'Agency: '+agency+'\nPhone: '+phone+'\nContract/Solicitation #: '+contract+'\nEstimated Value: '+value+'\nTimeline: '+timeline+'\n\nScope / Requirements:\n'+scope
+      })
+    });
+    if(res.ok){
+      btn.style.display='none';
+      document.getElementById('successMsg').style.display='block';
+    }else{
+      btn.textContent='Error — Try Again';btn.style.opacity='1';btn.disabled=false;
+    }
+  }catch(err){
+    btn.textContent='Error — Try Again';btn.style.opacity='1';btn.disabled=false;
+  }
+}
+</script>
+</body></html>
